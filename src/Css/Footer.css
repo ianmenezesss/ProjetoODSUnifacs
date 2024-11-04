@@ -1,0 +1,47 @@
+@media  screen
+and (max-width: 430px) {
+    
+    .footer{
+        width: 430px;
+        height: 250px;
+        background-color: black;
+        margin-top: 30px;
+    }
+    
+    .footer-img img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .footer-img{
+        text-align: center;
+        padding-top: 50px;
+}
+
+.icon-footer {
+    text-align: center;
+    color: rgba(42, 175, 25, 1);
+}
+
+.icon-footer svg{
+    width: 20px;
+    height: 20px;
+    padding-right: 3px;
+    padding-left: 5px;
+}
+
+.footer-bio{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 10px;
+    color: rgba(42, 175, 25, 1);
+}
+
+h5{
+    display: inline;
+    width: 58px;
+    height: 12px;
+}
+}
+
+
