@@ -1,0 +1,98 @@
+
+@media screen and (max-width: 430px) {
+
+    .setaCadastro > a >svg{
+        width: 30px;
+        height: 30px;
+        color: rgba(75, 186, 91, 1);
+    }
+
+    .setaCadastro {
+        position: absolute;
+        top: 5vh;
+        left: 5vh;
+    }
+
+    .logo {
+        width: 173px;
+        height: 150px;
+    }
+
+    .imgcomlogin{
+        width: 170px;
+        height: 190px;
+        position: absolute;
+        top: 10vh;
+        left: 25vh;
+        text-align: center;
+    }
+
+    .cadastronome{
+        font-size: 32px;
+    }
+
+    .formulario{
+        width: 100vw;
+        position: absolute;
+        top: 50vh;
+        left: 10vh;
+    }
+
+    input{
+        font-size: 16px;
+        width: 250px;
+        height: 50px;
+        border-radius: 12px;
+        border: 1px solid;
+        border-color: white;
+        background-color: rgba(237, 232, 226, 1);
+        padding-left: 20px;
+    }
+
+    .formulario > form > div{
+        height: 60px;
+    }
+
+    .formulario > form > div > svg {
+        width: 28px;
+        height: 35px;
+        color: white;
+        border: 8px solid;
+        border-color: rgba(75, 186, 91, 1);
+        border-radius: 12px;
+        background-color: rgba(75, 186, 91, 1);
+        position: relative;
+        top: 4vh;
+        left: 3vh;    
+    }
+
+    .esqueceusenha{
+        position: absolute;
+        top: 113vh;
+        left: 30vh;
+    }
+
+    .esqueceusenha > p {
+        font-size: 16px;
+    }
+
+    .OrCadastro {
+        position: absolute;
+        top: 118vh;
+        left: 14vh;
+        display: flex;
+        gap: 20px;
+    }
+
+    .OrCadastro > h3 {
+        font-size: 16px;
+    }
+
+    .OrCadastro > div{
+        width: 115px;
+        background-color: black;
+        height: 2px;
+        margin-top: 5px;
+    }
+
+}

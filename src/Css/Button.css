@@ -15,8 +15,119 @@
         margin-top: 30px;
     }
 
+    .buttonEntrarParaHome{
+        background-color: rgba(75, 186, 91, 1);
+        border-radius: 12px;
+        border-color: white;
+        position: relative;
+        left:  3vh;
+        top: 6vh;
+        width: 305px;
+        height: 50px;
+        color: white;
+        font-size: 16px;
+        border: 1px solid;
+        border-color: white;
+    }
+
+    .buttonEntrarParaHome > svg {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 2.1vh;
+    }
+
+    .buttonCadastroHome {
+        background-color: rgba(75, 186, 91, 1);
+        border-radius: 12px;
+        border-color: white;
+        position: relative;
+        left:  3vh;
+        top: 6vh;
+        width: 305px;
+        height: 50px;
+        color: white;
+        font-size: 16px;
+        border: 1px solid;
+        border-color: white;
+    }
+
+    .buttonCadastroHome > svg {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 2.1vh;
+    }
+
+    .buttonGoogle {
+        background-color: white;
+        border-radius: 12px;
+        border-color: white;
+        position: relative;
+        left:  3vh;
+        top: 8vh;
+        width: 305px;
+        height: 50px;
+        color: rgba(75, 186, 91, 1);;
+        font-size: 16px;
+        border: 1px solid;
+        border-color: rgba(75, 186, 91, 1);;
+    }
+
+    .buttonGoogle svg {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 2.1vh;
+        left: 10vh;
+    }
+
+    .buttoncadastro{
+        background-color: white;
+        border-radius: 12px;
+        border-color: white;
+        position: relative;
+        left:  12.5vh;
+        top: 118vh;
+        width: 305px;
+        height: 50px;
+        color: rgba(75, 186, 91, 1);;
+        font-size: 16px;
+        border: 1px solid;
+        border-color: rgba(75, 186, 91, 1);;
+    }
+
+    .buttoncadastro > svg {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 2.4vh;
+    }
+
     button > a {
         color: white;
+    }
+
+    .buttonEntrarLogin{
+        background-color: white;
+        border-radius: 12px;
+        border-color: white;
+        position: relative;
+        left:  12.5vh;
+        top: 125vh;
+        width: 305px;
+        height: 50px;
+        color: rgba(75, 186, 91, 1);;
+        font-size: 16px;
+        border: 1px solid;
+        border-color: rgba(75, 186, 91, 1);;
+    }
+
+    .buttonEntrarLogin > svg {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 2.4vh;
     }
 
 }

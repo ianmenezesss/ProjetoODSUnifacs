@@ -10,6 +10,7 @@ import Ods from './Ods'
 import Onca from './Onca'
 import Pantanal from './Pantanal'
 import Login from './Login'
+import Cadastro from './Cadastro'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
   {
     path: "Login",
     element: <Login />,
+  },
+  {
+    path: "Cadastro",
+    element: <Cadastro />,
   },
 ])
 

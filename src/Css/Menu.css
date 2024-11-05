@@ -64,8 +64,8 @@
     background-color: white;
     width: 200px;
     height: 320px;
-    right: 0px;
-    top: 14vh;
+    right: 10px;
+    top: 10vh;
     z-index: 1;
     box-shadow: -100px 605px 0px 600px rgba(0,0,0,0.40);
     transform: translateX(100%);
