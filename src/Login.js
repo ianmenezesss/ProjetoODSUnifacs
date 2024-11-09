@@ -7,12 +7,15 @@ import { PiLockKeyLight } from "react-icons/pi";
 import './Css/Button.css'
 import { BsArrowRightShort } from "react-icons/bs";
 import { FaGoogle } from "react-icons/fa";
-
+import arvore from './img/imag-Login.svg'
 
 
 function Login() {
   return (
     <>
+
+    <img className="img-arvore" src={arvore} alt="árvores" />
+
       <span className="setaLogin">
         <Link to='/'>
           <BsArrowLeftShort />
@@ -22,7 +25,7 @@ function Login() {
         <img className="logo" src={Logo} alt="Logo" />
         <h1 className="loginnome">Login</h1>
       </section>
-      <section className="formulario">
+      <section className="Loginformulario">
         <form id="from">
           <div>
             <MdOutlineMarkEmailUnread /> <input type="Email" id="email" placeholder="E-mail"></input>
@@ -51,7 +54,7 @@ function Login() {
         <div></div>
       </section>
 
-      <section className="cadastroLogin">
+      <section className="buttoncadastroLogin">
             <NavLink to='/Cadastro'><button className='buttoncadastro'> Cadastre-se <BsArrowRightShort /> </button></NavLink>
           </section>
     </>

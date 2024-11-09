@@ -1,7 +1,308 @@
+.setaLogin>a>svg {
+    width: 30px;
+    height: 30px;
+    color: rgba(75, 186, 91, 1);
+}
 
-@media screen and (max-width: 430px) {
+.setaLogin {
+    position: absolute;
+    top: 3vh;
+    left: 75vh;
+}
 
-    .setaLogin > a >svg{
+.logo {
+    width: 200px;
+    height: 200px;
+}
+
+.loginnome {
+    font-size: 32px;
+}
+
+.imgcomlogin {
+    width: 170px;
+    height: 190px;
+    position: absolute;
+    top: 10vh;
+    left: 65%;
+    text-align: center;
+}
+
+.Loginformulario {
+    width: 100vw;
+    position: fixed;
+    top: 40vh;
+    left: 60%;
+}
+
+input {
+    font-size: 16px;
+    width: 250px;
+    height: 50px;
+    border-radius: 12px;
+    border: 1px solid;
+    border-color: white;
+    background-color: rgba(237, 232, 226, 1);
+    padding-left: 20px;
+}
+
+.Loginformulario>form>div {
+    height: 60px;
+}
+
+.Loginformulario>form>div>svg {
+    width: 28px;
+    height: 35px;
+    color: white;
+    border: 8px solid;
+    border-color: rgba(75, 186, 91, 1);
+    border-radius: 12px;
+    background-color: rgba(75, 186, 91, 1);
+    position: relative;
+    top: 2vh;
+    left: 2vh;
+}
+
+.esqueceusenhaLogin {
+    position: absolute;
+    top: 75vh;
+    left: 66%;
+}
+
+.esqueceusenha>p {
+    font-size: 16px;
+}
+
+.OrLogin {
+    position: absolute;
+    top: 80vh;
+    left: 61.5%;
+    display: flex;
+    gap: 20px;
+}
+
+.OrLogin>h3 {
+    font-size: 16px;
+}
+
+.OrLogin>div {
+    width: 115px;
+    background-color: black;
+    height: 2px;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 1880px) {
+
+    .esqueceusenhaLogin {
+        position: absolute;
+        top: 79vh;
+        left: 66%;
+    }
+
+    .OrLogin {
+        position: absolute;
+        top: 85vh;
+        left: 61.5%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .Loginformulario>form>div>svg {
+        width: 28px;
+        height: 35px;
+        color: white;
+        border: 8px solid;
+        border-color: rgba(75, 186, 91, 1);
+        border-radius: 12px;
+        background-color: rgba(75, 186, 91, 1);
+        position: relative;
+        top: 2.5vh;
+        left: 2vh;
+    }
+
+}
+
+
+@media screen and (max-width: 1440px) {
+
+    .setaLogin {
+        position: absolute;
+        top: 1vh;
+        left: 70vh;
+    }
+
+    .img-arvore {
+        height: 100dvh;
+    }
+
+    .imgcomlogin {
+        width: 170px;
+        height: 190px;
+        position: absolute;
+        top: 4vh;
+        left: 65%;
+        text-align: center;
+    }
+
+    .Loginformulario {
+        width: 100vw;
+        position: fixed;
+        top: 40vh;
+        left: 60%;
+    }
+
+    input {
+        font-size: 16px;
+        width: 250px;
+        height: 50px;
+        border-radius: 12px;
+        border: 1px solid;
+        border-color: white;
+        background-color: rgba(237, 232, 226, 1);
+        padding-left: 20px;
+    }
+
+    .Loginformulario>form>div {
+        height: 60px;
+    }
+
+    .Loginformulario>form>div>svg {
+        width: 28px;
+        height: 35px;
+        color: white;
+        border: 8px solid;
+        border-color: rgba(75, 186, 91, 1);
+        border-radius: 12px;
+        background-color: rgba(75, 186, 91, 1);
+        position: relative;
+        top: 2.5vh;
+        left: 2.6vh;
+    }
+
+    .esqueceusenhaLogin {
+        position: absolute;
+        top: 79vh;
+        left: 67%;
+    }
+
+    .esqueceusenha>p {
+        font-size: 16px;
+    }
+
+    .OrLogin {
+        position: absolute;
+        top: 86vh;
+        left: 61.5%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .OrLogin>h3 {
+        font-size: 16px;
+    }
+
+    .OrLogin>div {
+        width: 115px;
+        background-color: black;
+        height: 2px;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .img-arvore {
+        width: 350px;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .setaLogin {
+        position: absolute;
+        top: 1vh;
+        left: 45vh;
+        width: 25px;
+    }
+
+    .img-arvore {
+        height: 100dvh;
+    }
+
+    .imgcomlogin {
+        width: 170px;
+        height: 190px;
+        position: absolute;
+        top: 4vh;
+        left: 62%;
+        text-align: center;
+    }
+
+    .Loginformulario {
+        width: 100vw;
+        position: fixed;
+        top: 40vh;
+        left: 52%;
+    }
+
+    input {
+        font-size: 16px;
+        width: 250px;
+        height: 50px;
+        border-radius: 12px;
+        border: 1px solid;
+        border-color: white;
+        background-color: rgba(237, 232, 226, 1);
+        padding-left: 20px;
+    }
+
+    .Loginformulario>form>div {
+        height: 60px;
+    }
+
+    .Loginformulario>form>div>svg {
+        top: 2.5vh;
+        left: 3vh;
+    }
+
+    .esqueceusenhaLogin {
+        left: 66% !important;
+        top: 79vh !important;
+    }
+
+    .OrLogin {
+        position: absolute;
+        top: 84vh;
+        left: 55%;
+        display: flex;
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .esqueceusenhaLogin {
+        position: absolute;
+        top: 82vh;
+        left: 70%;
+    }
+
+    .Loginformulario>form>div>svg {
+        top: 2.5vh;
+        left: 3vh;
+    }
+}
+
+
+@media only screen and (max-width: 430px) {
+
+
+    .img-arvore {
+        opacity: 0;
+    }
+
+    .setaLogin>a>svg {
         width: 30px;
         height: 30px;
         color: rgba(75, 186, 91, 1);
@@ -18,27 +319,27 @@
         height: 150px;
     }
 
-    .imgcomCadastro{
+    .imgcomlogin {
         width: 170px;
         height: 190px;
         position: absolute;
         top: 10vh;
-        left: 25vh;
+        left: 30vh;
         text-align: center;
     }
 
-    .loginnome{
+    .loginnome {
         font-size: 32px;
     }
 
-    .formulario{
+    .Loginformulario {
         width: 100vw;
         position: absolute;
         top: 50vh;
         left: 10vh;
     }
 
-    input{
+    input {
         font-size: 16px;
         width: 250px;
         height: 50px;
@@ -49,11 +350,11 @@
         padding-left: 20px;
     }
 
-    .formulario > form > div{
+    .Loginformulario>form>div {
         height: 60px;
     }
 
-    .formulario > form > div > svg {
+    .Loginformulario>form>div>svg {
         width: 28px;
         height: 35px;
         color: white;
@@ -63,38 +364,36 @@
         background-color: rgba(75, 186, 91, 1);
         position: relative;
         top: 4vh;
-        left: 3vh;    
+        left: 3vh;
     }
 
-    .esqueceusenhaLogin{
+    .esqueceusenhaLogin {
         position: absolute;
-        top: 103vh;
-        left: 30vh;
+        top: 108vh;
+        left: 33vh;
     }
 
-    .esqueceusenha > p {
+    .esqueceusenha>p {
         font-size: 16px;
     }
 
     .OrLogin {
         position: absolute;
-        top: 109vh;
+        top: 115vh;
         left: 14vh;
         display: flex;
         gap: 20px;
     }
 
-    .OrLogin > h3 {
+    .OrLogin>h3 {
         font-size: 16px;
     }
 
-    .OrLogin > div{
+    .OrLogin>div {
         width: 115px;
         background-color: black;
         height: 2px;
         margin-top: 5px;
     }
-
-    
 
 }

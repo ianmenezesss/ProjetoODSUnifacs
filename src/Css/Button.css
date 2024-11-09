@@ -1,3 +1,124 @@
+
+.buttonEntrarParaHome{
+    background-color: rgba(75, 186, 91, 1);
+    border-radius: 12px;
+    border-color: white;
+    position: relative;
+    left:  2vh;
+    top: 6vh;
+    width: 305px;
+    height: 50px;
+    color: white;
+    font-size: 16px;
+    border: 1px solid;
+    border-color: white;
+}
+
+.buttonEntrarParaHome > svg {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 1.3vh;
+}
+
+.buttonGoogle {
+    background-color: white;
+    border-radius: 12px;
+    border-color: white;
+    position: relative;
+    left:  2vh;
+    top: 8vh;
+    width: 305px;
+    height: 50px;
+    color: rgba(75, 186, 91, 1);;
+    font-size: 16px;
+    border: 1px solid;
+    border-color: rgba(75, 186, 91, 1);;
+}
+
+.buttonGoogle svg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 1.3vh;
+    left: 5vh;
+}
+
+.buttoncadastroLogin{
+    position: relative;
+    top: -200px;
+    left:  60.5%;
+}
+
+.buttoncadastro{
+    background-color: white;
+    border-radius: 12px;
+    border-color: white;
+    width: 305px;
+    height: 50px;
+    color: rgba(75, 186, 91, 1);;
+    font-size: 16px;
+    border: 1px solid;
+    border-color: rgba(75, 186, 91, 1);;
+}
+
+.buttoncadastro > svg {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 1.5vh;
+}
+
+@media screen and (max-width: 1880px) {
+    
+    html{
+        overflow: hidden;
+    }
+
+    .img-arvore {
+        height: 100dvh;
+    }
+
+
+    .buttoncadastroLogin{
+        position: relative;
+        top: -70px;
+        left:  61%;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+    
+    .buttonGoogle svg {
+        top: 1.5vh;
+        left: 6vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .buttonGoogle svg {
+        top: 1.8vh !important;
+        left: 6vh !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .buttonGoogle svg {
+        top: 2vh;
+        left: 7vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .buttoncadastroLogin{
+        top: -80px;
+        left:  55%;
+    }
+}
+
 @media screen and (max-width: 430px){
     .button{
         background-color: rgba(75, 186, 91, 1);
@@ -86,9 +207,6 @@
         background-color: white;
         border-radius: 12px;
         border-color: white;
-        position: relative;
-        left:  12.5vh;
-        top: 118vh;
         width: 305px;
         height: 50px;
         color: rgba(75, 186, 91, 1);;
@@ -104,30 +222,13 @@
         top: 2.4vh;
     }
 
+    .buttoncadastroLogin{
+        position: relative;
+        top: -450px;
+        left:  13vh;
+    }
+
     button > a {
         color: white;
     }
-
-    .buttonEntrarLogin{
-        background-color: white;
-        border-radius: 12px;
-        border-color: white;
-        position: relative;
-        left:  12.5vh;
-        top: 125vh;
-        width: 305px;
-        height: 50px;
-        color: rgba(75, 186, 91, 1);;
-        font-size: 16px;
-        border: 1px solid;
-        border-color: rgba(75, 186, 91, 1);;
-    }
-
-    .buttonEntrarLogin > svg {
-        width: 25px;
-        height: 25px;
-        position: absolute;
-        top: 2.4vh;
-    }
-
 }
