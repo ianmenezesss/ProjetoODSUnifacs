@@ -1,30 +1,37 @@
 
-@media screen and (max-width: 430px) {
+    .sapocadastro{
+        position: fixed;
+        right: 0%;
+    }
 
-    .setaCadastro > a >svg{
+    .setaCadastro{
+        position: fixed;
+        top: 1vh;
+        left: 2vh;
+    }
+
+    .setaCadastro a svg{
         width: 30px;
         height: 30px;
         color: rgba(75, 186, 91, 1);
     }
 
-    .setaCadastro {
-        position: absolute;
-        top: 5vh;
-        left: 5vh;
-    }
-
     .logo {
-        width: 173px;
-        height: 150px;
+        width: 300px;
+        height: 250px;
     }
 
     .imgcomCadastro{
-        width: 170px;
-        height: 190px;
-        position: absolute;
-        top: 10vh;
-        left: 25vh;
+        width: 300px;
+        height: 300px;
+        position: fixed;
+        top: 40px;
+        left: 20%;
         text-align: center;
+    }
+
+    .imgcomCadastro h1{
+        width: 300px;        
     }
 
     .cadastronome{
@@ -33,14 +40,14 @@
 
     .formulario{
         width: 100vw;
-        position: absolute;
-        top: 50vh;
-        left: 10vh;
+        position: fixed;
+        top: 320px;
+        left: 17%;
     }
 
     input{
         font-size: 16px;
-        width: 250px;
+        width: 300px;
         height: 50px;
         border-radius: 12px;
         border: 1px solid;
@@ -62,14 +69,14 @@
         border-radius: 12px;
         background-color: rgba(75, 186, 91, 1);
         position: relative;
-        top: 4vh;
-        left: 3vh;    
+        top: 20px;
+        left: 21px;    
     }
 
     .esqueceusenha{
-        position: absolute;
-        top: 113vh;
-        left: 30vh;
+        position: fixed;
+        top: 650px;
+        left: 24%;
     }
 
     .esqueceusenha > p {
@@ -77,9 +84,9 @@
     }
 
     .OrCadastro {
-        position: absolute;
-        top: 118vh;
-        left: 14vh;
+        position: fixed;
+        top: 700px;
+        left: 19%;
         display: flex;
         gap: 20px;
     }
@@ -95,4 +102,180 @@
         margin-top: 5px;
     }
 
+    @media screen and (max-width: 1440px){
+        .sapocadastro{
+            width: 560px;
+        }
+
+        .logo {
+            width: 200px;
+            height: 150px;
+        }
+
+        .formulario{
+            top: 255px;
+        }
+
+        .esqueceusenha{
+            top: 600px;
+        }
+
+        .OrCadastro{
+            top: 650px;
+        }
+    }
+
+    @media screen and (max-width: 1024px){
+        .sapocadastro{
+            width: 450px;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .imgcomCadastro{
+            left: 150px;
+        }
+
+        .formulario{
+            left: 100px;
+        }
+
+        .esqueceusenha{
+            left: 230px;
+        }
+
+        .OrCadastro{
+            left: 140px;
+        }
+}
+
+@media screen and (max-width: 768px){
+    .sapocadastro{
+        width: 320px;
+        object-fit: cover;
+    }
+
+    .imgcomCadastro{
+        left: 100px;
+    }
+
+    .formulario{
+        left: 50px;
+    }
+
+    .esqueceusenha{
+        left: 180px;
+    }
+
+    .OrCadastro{
+        left: 90px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .sapocadastro{
+        opacity: 0;
+    }
+
+    .setaCadastro > a >svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .setaCadastro {
+        top: 2vh;
+        left: 2vh;
+    }
+
+    .logo {
+        width: 173px;
+        height: 150px;
+    }
+
+    .imgcomCadastro{
+        width: 170px;
+        height: 190px;
+        top: 10px;
+        left: 150px;
+    }
+
+    .imgcomCadastro h1{
+        width: 150px;
+        margin-left: 10px;
+    }
+
+    .cadastronome{
+        font-size: 25px;
+    }
+
+    .formulario{
+        width: 100vw;
+        top: 180px;
+        left: 60px;
+    }
+
+    input{
+        width: 250px;
+        height: 50px;
+    }
+
+    .formulario > form > div{
+        height: 60px;
+    }
+
+    .formulario > form > div > svg {
+        width: 28px;
+        height: 35px;
+        top: 20px;
+        left: 22px;    
+    }
+
+    .esqueceusenha{
+        top: 500px;
+        left: 180px;
+    }
+
+    .OrCadastro {
+        top: 535px;
+        left: 90px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .imgcomCadastro{
+        left: 120px;
+    }
+    .formulario{
+        left: 30px;
+    }
+    .esqueceusenha{
+        left: 150px;
+    }
+
+    .OrCadastro{
+        left: 60px;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .imgcomCadastro{
+        left: 90px;
+    }
+    .formulario{
+        left: 10px;
+    }
+    input{
+        width: 230px;
+    }
+    .OrCadastro{
+        left: 35px;
+    }
+    .OrCadastro div {
+        width: 90px;
+    }
+    .esqueceusenha{
+        left: 100px;
+    }
 }

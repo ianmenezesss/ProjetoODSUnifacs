@@ -37,7 +37,7 @@ function Login() {
             <Link to='/'><button className='buttonEntrarParaHome'> Entrar <BsArrowRightShort /></button></Link>
           </section>
           <section>
-            <button className='buttonGoogle'> <FaGoogle /> Entrar com o google</button>
+            <button className='buttonGoogleLogin'> <FaGoogle /> Entrar com o google</button>
           </section>
 
 

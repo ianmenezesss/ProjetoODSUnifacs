@@ -7,7 +7,12 @@
 .setaLogin {
     position: absolute;
     top: 3vh;
-    left: 75vh;
+    left: 38%;
+}
+
+.img-arvore{
+    position: fixed;
+    left: 0%;
 }
 
 .logo {
@@ -22,16 +27,20 @@
 .imgcomlogin {
     width: 170px;
     height: 190px;
-    position: absolute;
-    top: 10vh;
-    left: 65%;
+    position: fixed;
+    top: 50px;
+    left: 63%;
     text-align: center;
+}
+
+.imgcomlogin h1{
+    margin-left: 100px;
 }
 
 .Loginformulario {
     width: 100vw;
     position: fixed;
-    top: 40vh;
+    top: 340px;
     left: 60%;
 }
 
@@ -64,9 +73,9 @@ input {
 }
 
 .esqueceusenhaLogin {
-    position: absolute;
-    top: 75vh;
-    left: 66%;
+    position: fixed;
+    top: 610px;
+    left: 67.5%;
 }
 
 .esqueceusenha>p {
@@ -74,9 +83,9 @@ input {
 }
 
 .OrLogin {
-    position: absolute;
-    top: 80vh;
-    left: 61.5%;
+    position: fixed;
+    top: 650px;
+    left: 63%;
     display: flex;
     gap: 20px;
 }
@@ -95,208 +104,126 @@ input {
 
 @media screen and (max-width: 1880px) {
 
+        html{
+            overflow: hidden;
+        }
+
+        .setaLogin{
+            left: 30%;
+        }
+    
+        .img-arvore {
+            height: 100dvh;
+        }
+
     .esqueceusenhaLogin {
-        position: absolute;
-        top: 79vh;
-        left: 66%;
+        top: 605px;
+        left: 68%;
     }
 
     .OrLogin {
-        position: absolute;
-        top: 85vh;
-        left: 61.5%;
-        display: flex;
-        gap: 20px;
+        top: 645px;
+        left: 63%;
     }
 
     .Loginformulario>form>div>svg {
-        width: 28px;
-        height: 35px;
-        color: white;
-        border: 8px solid;
-        border-color: rgba(75, 186, 91, 1);
-        border-radius: 12px;
-        background-color: rgba(75, 186, 91, 1);
-        position: relative;
-        top: 2.5vh;
-        left: 2vh;
+        top: 20px;
+        left: 18px;
     }
-
 }
-
 
 @media screen and (max-width: 1440px) {
 
     .setaLogin {
-        position: absolute;
         top: 1vh;
         left: 70vh;
-    }
-
-    .img-arvore {
-        height: 100dvh;
     }
 
     .imgcomlogin {
         width: 170px;
         height: 190px;
-        position: absolute;
-        top: 4vh;
-        left: 65%;
-        text-align: center;
+        top: 80px;
+
+    }
+
+    .imgcomlogin h1{
+        margin-left: 20px;
     }
 
     .Loginformulario {
-        width: 100vw;
-        position: fixed;
-        top: 40vh;
-        left: 60%;
-    }
-
-    input {
-        font-size: 16px;
-        width: 250px;
-        height: 50px;
-        border-radius: 12px;
-        border: 1px solid;
-        border-color: white;
-        background-color: rgba(237, 232, 226, 1);
-        padding-left: 20px;
-    }
-
-    .Loginformulario>form>div {
-        height: 60px;
+        top: 260px;
+        left: 57%;
     }
 
     .Loginformulario>form>div>svg {
-        width: 28px;
-        height: 35px;
-        color: white;
-        border: 8px solid;
-        border-color: rgba(75, 186, 91, 1);
-        border-radius: 12px;
-        background-color: rgba(75, 186, 91, 1);
-        position: relative;
-        top: 2.5vh;
-        left: 2.6vh;
+        top: 20px;
+        left: 20px;
     }
 
     .esqueceusenhaLogin {
-        position: absolute;
-        top: 79vh;
+        top: 520px;
         left: 67%;
     }
 
-    .esqueceusenha>p {
-        font-size: 16px;
-    }
-
     .OrLogin {
-        position: absolute;
-        top: 86vh;
-        left: 61.5%;
-        display: flex;
-        gap: 20px;
-    }
-
-    .OrLogin>h3 {
-        font-size: 16px;
-    }
-
-    .OrLogin>div {
-        width: 115px;
-        background-color: black;
-        height: 2px;
-        margin-top: 5px;
+        top: 560px;
+        left: 61%;
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 1024px){
+    .imgcomlogin{
+        left: 68%;
+    }
+    .Loginformulario{
+        left: 58%;
+    }
+    .esqueceusenhaLogin{
+        top: 520px;
+        left: 72%;
+    }
+    .OrLogin{
+        left: 63.5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
     
     .img-arvore {
         width: 350px;
-        height: 100%;
         object-fit: cover;
     }
 
     .setaLogin {
-        position: absolute;
         top: 1vh;
         left: 45vh;
         width: 25px;
     }
 
-    .img-arvore {
-        height: 100dvh;
-    }
-
     .imgcomlogin {
         width: 170px;
         height: 190px;
-        position: absolute;
-        top: 4vh;
+        top: 80px;
         left: 62%;
-        text-align: center;
     }
 
     .Loginformulario {
-        width: 100vw;
-        position: fixed;
-        top: 40vh;
-        left: 52%;
-    }
-
-    input {
-        font-size: 16px;
-        width: 250px;
-        height: 50px;
-        border-radius: 12px;
-        border: 1px solid;
-        border-color: white;
-        background-color: rgba(237, 232, 226, 1);
-        padding-left: 20px;
-    }
-
-    .Loginformulario>form>div {
-        height: 60px;
-    }
-
-    .Loginformulario>form>div>svg {
-        top: 2.5vh;
-        left: 3vh;
+        top: 260px;
+        left: 48%;
     }
 
     .esqueceusenhaLogin {
-        left: 66% !important;
-        top: 79vh !important;
+        left: 66.5%; 
+        top: 530px; 
     }
 
     .OrLogin {
-        position: absolute;
-        top: 84vh;
-        left: 55%;
-        display: flex;
-        gap: 20px;
+        top: 560px;
+        left: 55.5%;
     }
 }
 
-@media only screen and (max-width: 1024px) {
-
-    .esqueceusenhaLogin {
-        position: absolute;
-        top: 82vh;
-        left: 70%;
-    }
-
-    .Loginformulario>form>div>svg {
-        top: 2.5vh;
-        left: 3vh;
-    }
-}
-
-
-@media only screen and (max-width: 430px) {
-
+@media only screen and (max-width: 425px) {
 
     .img-arvore {
         opacity: 0;
@@ -305,13 +232,11 @@ input {
     .setaLogin>a>svg {
         width: 30px;
         height: 30px;
-        color: rgba(75, 186, 91, 1);
     }
 
     .setaLogin {
-        position: absolute;
-        top: 5vh;
-        left: 5vh;
+        top: 2vh;
+        left: 3vh;
     }
 
     .logo {
@@ -322,78 +247,62 @@ input {
     .imgcomlogin {
         width: 170px;
         height: 190px;
-        position: absolute;
-        top: 10vh;
-        left: 30vh;
-        text-align: center;
+        top: 60px;
+        left: 140px;
     }
 
-    .loginnome {
-        font-size: 32px;
+    .imgcomlogin h1{
+        margin-left: 10px;
     }
 
     .Loginformulario {
-        width: 100vw;
-        position: absolute;
-        top: 50vh;
-        left: 10vh;
-    }
-
-    input {
-        font-size: 16px;
-        width: 250px;
-        height: 50px;
-        border-radius: 12px;
-        border: 1px solid;
-        border-color: white;
-        background-color: rgba(237, 232, 226, 1);
-        padding-left: 20px;
-    }
-
-    .Loginformulario>form>div {
-        height: 60px;
+        top: 250px;
+        left: 50px;
     }
 
     .Loginformulario>form>div>svg {
-        width: 28px;
-        height: 35px;
-        color: white;
-        border: 8px solid;
-        border-color: rgba(75, 186, 91, 1);
-        border-radius: 12px;
-        background-color: rgba(75, 186, 91, 1);
-        position: relative;
-        top: 4vh;
-        left: 3vh;
+        top: 20px;
+        left: 20px;
     }
 
     .esqueceusenhaLogin {
-        position: absolute;
-        top: 108vh;
-        left: 33vh;
-    }
-
-    .esqueceusenha>p {
-        font-size: 16px;
+        top: 510px;
+        left: 170px;
     }
 
     .OrLogin {
-        position: absolute;
-        top: 115vh;
-        left: 14vh;
-        display: flex;
-        gap: 20px;
+        top: 550px;
+        left: 80px;
     }
+}
 
-    .OrLogin>h3 {
-        font-size: 16px;
+@media screen and (max-width: 375px) {
+    .imgcomlogin{
+        left: 120px;
     }
-
-    .OrLogin>div {
-        width: 115px;
-        background-color: black;
-        height: 2px;
-        margin-top: 5px;
+    .Loginformulario{
+        left: 30px;
     }
+    .esqueceusenhaLogin{
+        left: 150px;
+    }
+    .OrLogin{
+        left: 60px;
+    }
+}
 
+@media screen and (max-width: 320px) {
+    .imgcomlogin{
+        left: 80px;
+    }
+    .Loginformulario{
+        left: 5px;
+    }
+    .esqueceusenhaLogin{
+        left: 100px;
+    }
+    .OrLogin{
+        left: 40px;
+        width: 240px;
+    }
 }

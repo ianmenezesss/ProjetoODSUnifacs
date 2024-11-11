@@ -8,11 +8,15 @@ import './Css/Button.css'
 import { BsArrowRightShort } from "react-icons/bs";
 import { FaGoogle } from "react-icons/fa";
 import { RxPerson } from "react-icons/rx";
+import sapocadastro from './img/SapoCadastro.svg'
 
 
 function Cadastro() {
   return (
     <>
+
+      <img className="sapocadastro" src={sapocadastro} alt="Sapo" />
+
       <span className="setaCadastro">
         <Link to='/'>
           <BsArrowLeftShort />
@@ -28,7 +32,7 @@ function Cadastro() {
             <MdOutlineMarkEmailUnread /> <input type="Email" id="email" placeholder="E-mail"></input>
           </div>
           <div>
-          <RxPerson /> <input type="Name" id="name" placeholder="Nome"></input>
+            <RxPerson /> <input type="Name" id="name" placeholder="Nome"></input>
           </div>
           <div>
             <PiLockKeyLight /> <input type="password" id="senha" placeholder="Senha"></input>
@@ -37,7 +41,7 @@ function Cadastro() {
             <Link to='/'><button className='buttonCadastroHome'> Cadastre-se <BsArrowRightShort /></button></Link>
           </section>
           <section>
-            <button className='buttonGoogle'> <FaGoogle /> Entrar com o google</button>
+            <button className='buttonGoogleCadastro'> <FaGoogle /> Entrar com o google</button>
           </section>
 
 
@@ -55,8 +59,8 @@ function Cadastro() {
       </section>
 
       <section className="buttonEntrarCadastro">
-            <NavLink to="/Login"><button className='buttonEntrarLogin'> Entrar <BsArrowRightShort /> </button></NavLink> 
-          </section>
+        <NavLink to="/Login"><button className='buttonEntrarLogin'> Entrar <BsArrowRightShort /> </button></NavLink>
+      </section>
     </>
   );
 };
