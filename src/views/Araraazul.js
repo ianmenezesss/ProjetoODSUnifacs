@@ -1,10 +1,10 @@
-import './Css/Menu.css'
-import './Css/Img-Principal.css'
-import './Css/Button.css'
-import './Css/Text.css'
-import './Css/Footer.css'
-import Logo from './img/Logo-Bio.jpg'
-import img from './img/Ipe.svg'
+import '../Css/Menu.css'
+import '../Css/Button.css'
+import '../Css/Img-Principal.css'
+import '../Css/Footer.css'
+import '../Css/Text.css'
+import Logo from '../img/Logo-Bio.jpg'
+import img from '../img/AraraAzul.svg'
 import { IoLogoFacebook } from "react-icons/io";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
@@ -12,7 +12,7 @@ import { VscAccount } from "react-icons/vsc";
 import { CgChevronDown } from "react-icons/cg";
 import { NavLink, Link } from 'react-router-dom';
 
-function Ipe() {
+function Araraazul() {
     return (
         <>
             <header className="header-nav">
@@ -66,65 +66,63 @@ function Ipe() {
             </header>
 
             <section className='img-principal'>
-                <img src={img} alt="Ipe" />
+                <img src={img} alt="AraraAzul" />
                 <label className='legenda-img'>Helping preserve <span>nature’s</span> balance.</label>
             </section>
 
             <section className='text'>
                 <div className='texto-principal'>
-                    <span>IPÊ:</span>
+                    <span>Instituto Arara Azul:</span>
                 </div>
 
                 <p>
-                O Instituto IPÊ – Instituto de Pesquisas Ecológicas é uma das principais organizações ambientais do 
-                Brasil, atuando há mais de 30 anos em prol da conservação da biodiversidade e do desenvolvimento 
-                sustentável. Fundado em 1992, o Instituto surgiu como uma resposta à crescente degradação dos 
-                ecossistemas brasileiros e à necessidade de aliar a pesquisa científica à educação ambiental e à 
-                participação comunitária para garantir a preservação da natureza.
+                O Instituto Arara Azul é uma organização sem fins lucrativos que, desde 1990, 
+                dedica-se à conservação da arara-azul-grande (Anodorhynchus hyacinthinus), 
+                uma das espécies de aves mais emblemáticas do Brasil e que já esteve seriamente 
+                ameaçada de extinção. Com sede no Pantanal, o maior bioma úmido do mundo, o Instituto 
+                trabalha ativamente na proteção da arara-azul e na preservação de seu habitat natural, 
+                uma região rica em biodiversidade, mas vulnerável a ameaças como o desmatamento e as queimadas.
                 </p>
 
                 <p>
-                Com sede no estado de São Paulo, o IPÊ desenvolve seus projetos em diversos biomas brasileiros, 
-                incluindo a Mata Atlântica, Amazônia, Pantanal e o Cerrado, buscando soluções que promovam o 
-                equilíbrio entre a conservação ambiental e o desenvolvimento humano. A atuação do IPÊ é baseada 
-                em uma abordagem integrada, que envolve a pesquisa científica aplicada à conservação, o monitoramento 
-                de espécies ameaçadas, a restauração de ecossistemas, e a educação ambiental como ferramentas fundamentais 
-                para a proteção da biodiversidade.
+                Fundado pela bióloga Neiva Guedes, o Instituto Arara Azul surgiu como uma resposta à 
+                alarmante redução das populações de araras-azuis devido à destruição de seus habitats, 
+                tráfico de animais e caça ilegal. Hoje, mais de 30 anos depois, a organização se tornou uma 
+                referência mundial em projetos de conservação de aves e recuperação de populações ameaçadas, 
+                alcançando resultados expressivos na preservação da espécie.
                 </p>
 
                 <p>
-                O Instituto se destaca especialmente pelo trabalho em restauração florestal, sendo responsável por 
-                um dos maiores projetos de reflorestamento da Mata Atlântica, com milhões de árvores plantadas ao 
-                longo dos anos. Esse trabalho é crucial não apenas para a recuperação dos habitats naturais, mas também 
-                para a mitigação das mudanças climáticas, por meio do sequestro de carbono pelas florestas restauradas.
+                O principal objetivo do Instituto é garantir a sobrevivência das araras-azuis e de 
+                outras espécies ameaçadas, por meio de pesquisas científicas, educação ambiental e 
+                ações de manejo e monitoramento. Através de um programa de conservação abrangente, 
+                eles monitoram os ninhos, estudam os hábitos de reprodução das araras e promovem a 
+                preservação das árvores onde essas aves fazem seus ninhos, como os manduvis e as aroeiras.
                 </p>
 
                 <p>
-                Além da restauração, o IPÊ desenvolve projetos de conservação de espécies ameaçadas, como a onça-pintada, 
-                o mico-leão-preto e a anta brasileira, realizando monitoramento populacional e promovendo a proteção dos
-                 habitats dessas espécies. Outra área de destaque é a educação e sensibilização ambiental, com programas que 
-                 envolvem escolas, comunidades rurais e urbanas, capacitando pessoas para o manejo sustentável dos recursos 
-                 naturais e para a importância da preservação da biodiversidade.
+                Além da conservação direta da arara-azul, o Instituto também desempenha um papel 
+                importante na sensibilização das comunidades locais e na promoção do ecoturismo 
+                sustentável. Ao longo de suas três décadas de atuação, o trabalho do Instituto 
+                Arara Azul ajudou a restaurar as populações da espécie no Pantanal e influenciou 
+                políticas públicas de conservação no Brasil. Hoje, o instituto segue firme em sua missão, 
+                colaborando com parceiros locais e internacionais para garantir que a arara-azul continue a 
+                ser um símbolo de esperança e preservação da vida selvagem.
                 </p>
 
                 <p>
-                O IPÊ também atua na formação de lideranças para a conservação, oferecendo cursos e programas de capacitação 
-                através de seu Centro de Formação em Conservação da Biodiversidade (ESCAS), que prepara profissionais e líderes 
-                ambientais para enfrentar os desafios da conservação no Brasil e no mundo.
-                </p>
-
-                <p>
-                O objetivo central do Instituto IPÊ é proteger a biodiversidade brasileira, promovendo a sustentabilidade e o 
-                desenvolvimento social das comunidades locais. Através de seus projetos de pesquisa, educação e restauração, o 
-                IPÊ busca criar um impacto positivo a longo prazo, contribuindo para a construção de um futuro onde a natureza e o ser 
-                humano possam coexistir em harmonia.
+                O Instituto Arara Azul é uma prova de que, com esforços contínuos e coordenados, 
+                é possível reverter o risco de extinção e garantir um futuro mais seguro para as 
+                espécies que compõem a rica biodiversidade brasileira.
                 </p>
 
             </section>
+
 
             <section>
-                <button className='button'><a href='https://ipe.org.br/o-ipe/'>Vem Conhecer!</a></button>
+            <button className='button'><a href='https://www.institutoararaazul.org.br/'>Vem Conhecer!</a></button>
             </section>
+
 
             <footer className='footer'>
 
@@ -141,4 +139,4 @@ function Ipe() {
     );
 };
 
-export default Ipe;
+export default Araraazul;

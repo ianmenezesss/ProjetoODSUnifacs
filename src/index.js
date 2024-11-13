@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Menu from './Menu'
-import Queimada from './Queimada'
-import Araraazul from './Araraazul'
-import Especies from './Especies'
-import Ipe from './Ipe'
-import Ods from './Ods'
-import Onca from './Onca'
-import Pantanal from './Pantanal'
-import Login from './Login'
-import Cadastro from './Cadastro'
+import './Css/index.css';
+import Menu from './views/Menu'
+import Queimada from './views/Queimada'
+import Araraazul from './views/Araraazul'
+import Especies from './views/Especies'
+import Ipe from './views/Ipe'
+import Ods from './views/Ods'
+import Onca from './views/Onca'
+import Pantanal from './views/Pantanal'
+import Login from './views/Login'
+import Cadastro from './views/Cadastro'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([

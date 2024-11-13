@@ -1,10 +1,10 @@
-import './Css/Menu.css'
-import './Css/Button.css'
-import './Css/Img-Principal.css'
-import './Css/Footer.css'
-import './Css/Text.css'
-import Logo from './img/Logo-Bio.jpg'
-import img from './img/AraraAzul.svg'
+import '../Css/Menu.css'
+import '../Css/Img-Principal.css'
+import '../Css/Button.css'
+import '../Css/Footer.css'
+import '../Css/Text.css'
+import Logo from '../img/Logo-Bio.jpg'
+import img from '../img/SosPantanal.svg'
 import { IoLogoFacebook } from "react-icons/io";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
@@ -12,7 +12,7 @@ import { VscAccount } from "react-icons/vsc";
 import { CgChevronDown } from "react-icons/cg";
 import { NavLink, Link } from 'react-router-dom';
 
-function Araraazul() {
+function Pantanal() {
     return (
         <>
             <header className="header-nav">
@@ -66,63 +66,60 @@ function Araraazul() {
             </header>
 
             <section className='img-principal'>
-                <img src={img} alt="AraraAzul" />
+                <img src={img} alt="Pantanal" />
                 <label className='legenda-img'>Helping preserve <span>nature’s</span> balance.</label>
             </section>
 
             <section className='text'>
                 <div className='texto-principal'>
-                    <span>Instituto Arara Azul:</span>
+                    <span>SOS Pantanal:</span>
                 </div>
 
                 <p>
-                O Instituto Arara Azul é uma organização sem fins lucrativos que, desde 1990, 
-                dedica-se à conservação da arara-azul-grande (Anodorhynchus hyacinthinus), 
-                uma das espécies de aves mais emblemáticas do Brasil e que já esteve seriamente 
-                ameaçada de extinção. Com sede no Pantanal, o maior bioma úmido do mundo, o Instituto 
-                trabalha ativamente na proteção da arara-azul e na preservação de seu habitat natural, 
-                uma região rica em biodiversidade, mas vulnerável a ameaças como o desmatamento e as queimadas.
+                O SOS Pantanal é uma organização da sociedade civil que atua desde 2009 com o 
+                objetivo de conservar o Pantanal, o maior bioma úmido do mundo e um dos ecossistemas 
+                mais ricos em biodiversidade. A organização surgiu como uma resposta às crescentes 
+                ameaças que o Pantanal vem enfrentando, como o desmatamento, as queimadas, a expansão 
+                da agropecuária e as mudanças climáticas, que colocam em risco não só a fauna e a 
+                flora locais, mas também a vida das comunidades que dependem dos recursos naturais da região.
                 </p>
 
                 <p>
-                Fundado pela bióloga Neiva Guedes, o Instituto Arara Azul surgiu como uma resposta à 
-                alarmante redução das populações de araras-azuis devido à destruição de seus habitats, 
-                tráfico de animais e caça ilegal. Hoje, mais de 30 anos depois, a organização se tornou uma 
-                referência mundial em projetos de conservação de aves e recuperação de populações ameaçadas, 
-                alcançando resultados expressivos na preservação da espécie.
+                Com sede em Cuiabá, Mato Grosso, o SOS Pantanal desenvolve suas atividades principalmente 
+                no Pantanal Mato-Grossense e no Pantanal do Sul, trabalhando em parceria com instituições 
+                públicas, privadas e comunidades locais para promover a preservação do bioma e o uso 
+                sustentável de seus recursos. A organização foca em monitoramento ambiental, pesquisa 
+                científica e educação ambiental, buscando sensibilizar tanto a população local quanto o público 
+                nacional e internacional sobre a importância desse ecossistema único.
                 </p>
 
                 <p>
-                O principal objetivo do Instituto é garantir a sobrevivência das araras-azuis e de 
-                outras espécies ameaçadas, por meio de pesquisas científicas, educação ambiental e 
-                ações de manejo e monitoramento. Através de um programa de conservação abrangente, 
-                eles monitoram os ninhos, estudam os hábitos de reprodução das araras e promovem a 
-                preservação das árvores onde essas aves fazem seus ninhos, como os manduvis e as aroeiras.
+                Um dos principais focos de atuação do SOS Pantanal é o monitoramento de incêndios e a 
+                prevenção de queimadas, que têm sido uma ameaça crescente ao bioma. A organização realiza 
+                campanhas de conscientização e capacitação das comunidades locais para combater o fogo, além de 
+                atuar na restauração de áreas degradadas e no incentivo ao manejo sustentável das terras.
+                </p>
+
+                <p> 
+                Além disso, o SOS Pantanal promove iniciativas de ecoturismo como uma alternativa econômica 
+                sustentável para a região. O turismo de natureza no Pantanal, se bem gerido, pode gerar renda 
+                para as comunidades locais sem degradar o meio ambiente, e a organização trabalha para fomentar 
+                essa prática de forma responsável.
                 </p>
 
                 <p>
-                Além da conservação direta da arara-azul, o Instituto também desempenha um papel 
-                importante na sensibilização das comunidades locais e na promoção do ecoturismo 
-                sustentável. Ao longo de suas três décadas de atuação, o trabalho do Instituto 
-                Arara Azul ajudou a restaurar as populações da espécie no Pantanal e influenciou 
-                políticas públicas de conservação no Brasil. Hoje, o instituto segue firme em sua missão, 
-                colaborando com parceiros locais e internacionais para garantir que a arara-azul continue a 
-                ser um símbolo de esperança e preservação da vida selvagem.
-                </p>
-
-                <p>
-                O Instituto Arara Azul é uma prova de que, com esforços contínuos e coordenados, 
-                é possível reverter o risco de extinção e garantir um futuro mais seguro para as 
-                espécies que compõem a rica biodiversidade brasileira.
+                O principal objetivo do SOS Pantanal é garantir a conservação e o desenvolvimento sustentável 
+                do Pantanal, equilibrando as necessidades de conservação da natureza com o bem-estar das populações 
+                que vivem na região. Através de suas iniciativas, a organização busca proteger o Pantanal para as futuras 
+                gerações, garantindo que este importante bioma continue a ser um refúgio para a rica biodiversidade que 
+                abriga e um recurso vital para o planeta.
                 </p>
 
             </section>
-
 
             <section>
-            <button className='button'><a href='https://www.institutoararaazul.org.br/'>Vem Conhecer!</a></button>
+            <button className='button'><a href='https://www.sospantanal.org.br/'>Vem Conhecer!</a></button>
             </section>
-
 
             <footer className='footer'>
 
@@ -139,4 +136,4 @@ function Araraazul() {
     );
 };
 
-export default Araraazul;
+export default Pantanal;

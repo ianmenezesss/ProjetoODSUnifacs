@@ -1,10 +1,10 @@
-import './Css/Menu.css'
-import './Css/Img-Principal.css'
-import './Css/Button.css'
-import './Css/Text.css'
-import './Css/Footer.css'
-import Logo from './img/Logo-Bio.jpg'
-import img from './img/ODS.svg'
+import '../Css/Menu.css'
+import '../Css/Img-Principal.css'
+import '../Css/Button.css'
+import '../Css/Text.css'
+import '../Css/Footer.css'
+import Logo from '../img/Logo-Bio.jpg'
+import img from '../img/ODS.svg'
 import { IoLogoFacebook } from "react-icons/io";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";

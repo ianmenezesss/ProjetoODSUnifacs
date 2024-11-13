@@ -1,10 +1,10 @@
-import './Css/Menu.css'
-import './Css/Img-Principal.css'
-import './Css/Button.css'
-import './Css/Footer.css'
-import './Css/Text.css'
-import Logo from './img/Logo-Bio.jpg'
-import img from './img/SosPantanal.svg'
+import '../Css/Menu.css'
+import '../Css/Img-Principal.css'
+import '../Css/Button.css'
+import '../Css/Text.css'
+import '../Css/Footer.css'
+import Logo from '../img/Logo-Bio.jpg'
+import img from '../img/Ipe.svg'
 import { IoLogoFacebook } from "react-icons/io";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
@@ -12,7 +12,7 @@ import { VscAccount } from "react-icons/vsc";
 import { CgChevronDown } from "react-icons/cg";
 import { NavLink, Link } from 'react-router-dom';
 
-function Pantanal() {
+function Ipe() {
     return (
         <>
             <header className="header-nav">
@@ -66,59 +66,64 @@ function Pantanal() {
             </header>
 
             <section className='img-principal'>
-                <img src={img} alt="Pantanal" />
+                <img src={img} alt="Ipe" />
                 <label className='legenda-img'>Helping preserve <span>nature’s</span> balance.</label>
             </section>
 
             <section className='text'>
                 <div className='texto-principal'>
-                    <span>SOS Pantanal:</span>
+                    <span>IPÊ:</span>
                 </div>
 
                 <p>
-                O SOS Pantanal é uma organização da sociedade civil que atua desde 2009 com o 
-                objetivo de conservar o Pantanal, o maior bioma úmido do mundo e um dos ecossistemas 
-                mais ricos em biodiversidade. A organização surgiu como uma resposta às crescentes 
-                ameaças que o Pantanal vem enfrentando, como o desmatamento, as queimadas, a expansão 
-                da agropecuária e as mudanças climáticas, que colocam em risco não só a fauna e a 
-                flora locais, mas também a vida das comunidades que dependem dos recursos naturais da região.
+                O Instituto IPÊ – Instituto de Pesquisas Ecológicas é uma das principais organizações ambientais do 
+                Brasil, atuando há mais de 30 anos em prol da conservação da biodiversidade e do desenvolvimento 
+                sustentável. Fundado em 1992, o Instituto surgiu como uma resposta à crescente degradação dos 
+                ecossistemas brasileiros e à necessidade de aliar a pesquisa científica à educação ambiental e à 
+                participação comunitária para garantir a preservação da natureza.
                 </p>
 
                 <p>
-                Com sede em Cuiabá, Mato Grosso, o SOS Pantanal desenvolve suas atividades principalmente 
-                no Pantanal Mato-Grossense e no Pantanal do Sul, trabalhando em parceria com instituições 
-                públicas, privadas e comunidades locais para promover a preservação do bioma e o uso 
-                sustentável de seus recursos. A organização foca em monitoramento ambiental, pesquisa 
-                científica e educação ambiental, buscando sensibilizar tanto a população local quanto o público 
-                nacional e internacional sobre a importância desse ecossistema único.
+                Com sede no estado de São Paulo, o IPÊ desenvolve seus projetos em diversos biomas brasileiros, 
+                incluindo a Mata Atlântica, Amazônia, Pantanal e o Cerrado, buscando soluções que promovam o 
+                equilíbrio entre a conservação ambiental e o desenvolvimento humano. A atuação do IPÊ é baseada 
+                em uma abordagem integrada, que envolve a pesquisa científica aplicada à conservação, o monitoramento 
+                de espécies ameaçadas, a restauração de ecossistemas, e a educação ambiental como ferramentas fundamentais 
+                para a proteção da biodiversidade.
                 </p>
 
                 <p>
-                Um dos principais focos de atuação do SOS Pantanal é o monitoramento de incêndios e a 
-                prevenção de queimadas, que têm sido uma ameaça crescente ao bioma. A organização realiza 
-                campanhas de conscientização e capacitação das comunidades locais para combater o fogo, além de 
-                atuar na restauração de áreas degradadas e no incentivo ao manejo sustentável das terras.
-                </p>
-
-                <p> 
-                Além disso, o SOS Pantanal promove iniciativas de ecoturismo como uma alternativa econômica 
-                sustentável para a região. O turismo de natureza no Pantanal, se bem gerido, pode gerar renda 
-                para as comunidades locais sem degradar o meio ambiente, e a organização trabalha para fomentar 
-                essa prática de forma responsável.
+                O Instituto se destaca especialmente pelo trabalho em restauração florestal, sendo responsável por 
+                um dos maiores projetos de reflorestamento da Mata Atlântica, com milhões de árvores plantadas ao 
+                longo dos anos. Esse trabalho é crucial não apenas para a recuperação dos habitats naturais, mas também 
+                para a mitigação das mudanças climáticas, por meio do sequestro de carbono pelas florestas restauradas.
                 </p>
 
                 <p>
-                O principal objetivo do SOS Pantanal é garantir a conservação e o desenvolvimento sustentável 
-                do Pantanal, equilibrando as necessidades de conservação da natureza com o bem-estar das populações 
-                que vivem na região. Através de suas iniciativas, a organização busca proteger o Pantanal para as futuras 
-                gerações, garantindo que este importante bioma continue a ser um refúgio para a rica biodiversidade que 
-                abriga e um recurso vital para o planeta.
+                Além da restauração, o IPÊ desenvolve projetos de conservação de espécies ameaçadas, como a onça-pintada, 
+                o mico-leão-preto e a anta brasileira, realizando monitoramento populacional e promovendo a proteção dos
+                 habitats dessas espécies. Outra área de destaque é a educação e sensibilização ambiental, com programas que 
+                 envolvem escolas, comunidades rurais e urbanas, capacitando pessoas para o manejo sustentável dos recursos 
+                 naturais e para a importância da preservação da biodiversidade.
+                </p>
+
+                <p>
+                O IPÊ também atua na formação de lideranças para a conservação, oferecendo cursos e programas de capacitação 
+                através de seu Centro de Formação em Conservação da Biodiversidade (ESCAS), que prepara profissionais e líderes 
+                ambientais para enfrentar os desafios da conservação no Brasil e no mundo.
+                </p>
+
+                <p>
+                O objetivo central do Instituto IPÊ é proteger a biodiversidade brasileira, promovendo a sustentabilidade e o 
+                desenvolvimento social das comunidades locais. Através de seus projetos de pesquisa, educação e restauração, o 
+                IPÊ busca criar um impacto positivo a longo prazo, contribuindo para a construção de um futuro onde a natureza e o ser 
+                humano possam coexistir em harmonia.
                 </p>
 
             </section>
 
             <section>
-            <button className='button'><a href='https://www.sospantanal.org.br/'>Vem Conhecer!</a></button>
+                <button className='button'><a href='https://ipe.org.br/o-ipe/'>Vem Conhecer!</a></button>
             </section>
 
             <footer className='footer'>
@@ -136,4 +141,4 @@ function Pantanal() {
     );
 };
 
-export default Pantanal;
+export default Ipe;

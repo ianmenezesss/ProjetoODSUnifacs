@@ -1,17 +1,44 @@
 import { BsArrowLeftShort } from "react-icons/bs";
-import { NavLink, Link } from 'react-router-dom';
-import './Css/Cadastro.css'
-import Logo from './img/Logo-Bio.jpg'
+import { NavLink, Link, useNavigate } from 'react-router-dom';
+import '../Css/Cadastro.css'
+import Logo from '../img/Logo-Bio.jpg'
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { PiLockKeyLight } from "react-icons/pi";
-import './Css/Button.css'
+import '../Css/Button.css'
 import { BsArrowRightShort } from "react-icons/bs";
-import { FaGoogle } from "react-icons/fa";
 import { RxPerson } from "react-icons/rx";
-import sapocadastro from './img/SapoCadastro.svg'
+import sapocadastro from '../img/SapoCadastro.svg'
+import { useRef } from "react";
+import api from '../services/api';
 
 
 function Cadastro() {
+  const emailRef = useRef();
+  const nameRef = useRef();
+  const senhaRef = useRef();
+  const navigate = useNavigate();
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    try {
+
+      await api.post('/cadastro', {
+        name: nameRef.current.value,
+        email: emailRef.current.value,
+        senha: senhaRef.current.value
+      })
+
+      alert('Cadastro realizado com sucesso!')
+
+      navigate('/')
+
+    } catch (e) {
+      alert("Erro ao cadastrar");
+    }
+
+  }
+
   return (
     <>
 
@@ -27,21 +54,18 @@ function Cadastro() {
         <h1 className="cadastronome">Cadastre-se</h1>
       </section>
       <section className="formulario">
-        <form id="from">
+        <form id="from" onSubmit={handleSubmit}>
           <div>
-            <MdOutlineMarkEmailUnread /> <input type="Email" id="email" placeholder="E-mail"></input>
+            <MdOutlineMarkEmailUnread /> <input ref={emailRef} type="Email" id="email" placeholder="E-mail"></input>
           </div>
           <div>
-            <RxPerson /> <input type="Name" id="name" placeholder="Nome"></input>
+            <RxPerson /> <input ref={nameRef} type="Name" id="name" placeholder="Nome"></input>
           </div>
           <div>
-            <PiLockKeyLight /> <input type="password" id="senha" placeholder="Senha"></input>
+            <PiLockKeyLight /> <input ref={senhaRef} type="password" id="senha" placeholder="Senha"></input>
           </div>
           <section>
-            <Link to='/'><button className='buttonCadastroHome'> Cadastre-se <BsArrowRightShort /></button></Link>
-          </section>
-          <section>
-            <button className='buttonGoogleCadastro'> <FaGoogle /> Entrar com o google</button>
+            <button className='buttonCadastroHome'> Cadastre-se <BsArrowRightShort /></button>
           </section>
 
 
