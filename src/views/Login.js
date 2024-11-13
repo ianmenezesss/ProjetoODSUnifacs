@@ -26,6 +26,7 @@ function Login() {
       })
 
       localStorage.setItem('token', token);
+      localStorage.setItem('email', emailRef.current.value);
 
       navigate('/')
 
@@ -65,9 +66,6 @@ function Login() {
         </form>
       </section>
 
-      <section className="esqueceusenhaLogin">
-        <p>Esqueceu a senha?</p>
-      </section>
 
       <section className="OrLogin">
         <div></div>

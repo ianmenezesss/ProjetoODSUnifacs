@@ -85,7 +85,7 @@
 
     .OrCadastro {
         position: fixed;
-        top: 700px;
+        top: 600px;
         left: 19%;
         display: flex;
         gap: 20px;
@@ -121,7 +121,8 @@
         }
 
         .OrCadastro{
-            top: 650px;
+            top: 540px;
+            left: 19.9%;
         }
     }
 
@@ -168,7 +169,7 @@
     }
 
     .OrCadastro{
-        left: 90px;
+        left: 92px;
     }
 }
 
@@ -237,7 +238,7 @@
     }
 
     .OrCadastro {
-        top: 535px;
+        top: 465px;
         left: 90px;
     }
 }

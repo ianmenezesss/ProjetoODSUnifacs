@@ -24,7 +24,7 @@ router.post('/cadastro', async (req, res) => {
 
 
     //salva o usuário no banco de dados
-    await prisma.user.create({
+    const newUser = await prisma.user.create({
         data:{
             name: user.name,
             email: user.email,
@@ -32,7 +32,9 @@ router.post('/cadastro', async (req, res) => {
         },
     })
 
-    res.status(201).json(user);
+    const token = jwt.sign({ id: newUser.id }, JWT_SECRET, { expiresIn: '3h' })
+
+    return res.json({ token })
 
     }catch(e){
         

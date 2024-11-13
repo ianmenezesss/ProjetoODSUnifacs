@@ -23,11 +23,16 @@ function Cadastro() {
 
     try {
 
-      await api.post('/cadastro', {
+      const { data } = await api.post('/cadastro', {
         name: nameRef.current.value,
         email: emailRef.current.value,
         senha: senhaRef.current.value
-      })
+      });
+
+      const token = data.token;
+
+      localStorage.setItem('token', token); 
+      localStorage.setItem('email', emailRef.current.value); 
 
       alert('Cadastro realizado com sucesso!')
 
@@ -72,10 +77,6 @@ function Cadastro() {
         </form>
       </section>
 
-      <section className="esqueceusenha">
-        <p>Esqueceu a senha?</p>
-      </section>
-
       <section className="OrCadastro">
         <div></div>
         <h3>OR</h3>
@@ -83,7 +84,7 @@ function Cadastro() {
       </section>
 
       <section className="buttonEntrarCadastro">
-        <NavLink to="/Login"><button className='buttonEntrarLogin'> Entrar <BsArrowRightShort /> </button></NavLink>
+        <NavLink to="/Login"><button className='buttonEntrarLogin'> Login <BsArrowRightShort /> </button></NavLink>
       </section>
     </>
   );

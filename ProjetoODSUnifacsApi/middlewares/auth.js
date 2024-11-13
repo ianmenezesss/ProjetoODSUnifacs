@@ -20,7 +20,7 @@ const auth = async (req, res, next) => {
 
     // Se o token não for válido, retorna um erro
     } catch (e) {
-        res.status(401).send({ message: 'Acesso negado' });
+        res.status(401).send({ message: 'Erro no token' });
     }
 };
 

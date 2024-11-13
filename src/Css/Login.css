@@ -84,8 +84,8 @@ input {
 
 .OrLogin {
     position: fixed;
-    top: 650px;
-    left: 63%;
+    top: 555px;
+    left: 62.9%;
     display: flex;
     gap: 20px;
 }
@@ -122,7 +122,7 @@ input {
     }
 
     .OrLogin {
-        top: 645px;
+        top: 550px;
         left: 63%;
     }
 
@@ -166,7 +166,7 @@ input {
     }
 
     .OrLogin {
-        top: 560px;
+        top: 470px;
         left: 61%;
     }
 }
@@ -218,7 +218,7 @@ input {
     }
 
     .OrLogin {
-        top: 560px;
+        top: 475px;
         left: 55.5%;
     }
 }
@@ -271,8 +271,8 @@ input {
     }
 
     .OrLogin {
-        top: 550px;
-        left: 80px;
+        top: 465px;
+        left: 75px;
     }
 }
 
@@ -287,7 +287,7 @@ input {
         left: 150px;
     }
     .OrLogin{
-        left: 60px;
+        left: 55px;
     }
 }
 

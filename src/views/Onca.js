@@ -11,8 +11,25 @@ import { MdEmail } from "react-icons/md";
 import { VscAccount } from "react-icons/vsc";
 import { CgChevronDown } from "react-icons/cg";
 import { NavLink, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 function Onca() {
+    const [userEmail, setUserEmail] = useState(null);
+
+    useEffect(() => {
+      const token = localStorage.getItem('token');
+      const email = localStorage.getItem('email');
+      if (token) {
+        setUserEmail(email); // Define o email se o token existir
+      }
+    }, []);
+  
+    function handleLogout() {
+      localStorage.removeItem('token'); // Remove o token
+      localStorage.removeItem('email'); // Remove o email
+      setUserEmail(null); // Reseta o estado do email
+    }
+  
     return (
         <>
             <header className="header-nav">
@@ -28,12 +45,24 @@ function Onca() {
                         <div className='linha2'></div>
                         <div className='linha3'></div>
                     </div>
-                    <section className='menuinterativo'>
-                        <div className='menu-interativo-componentes'><VscAccount />
-                            <div className='facaseulogin'>
-                                <p>Faça seu <span><NavLink to="/Login">Login</NavLink></span></p>
-                            </div>
-                        </div>
+                    <section className="menuinterativo">
+            {userEmail ? (
+              <div className="menu-interativo-componentes">
+                <VscAccount />
+                <div className="facaseulogin">
+                  <p>Olá, {userEmail}</p>
+                </div>
+              </div>
+            ) : (
+              <div className="menu-interativo-componentes">
+                <VscAccount />
+                <div className="facaseulogin">
+                  <p>
+                    Faça seu <span><NavLink to="/Login">Login</NavLink></span>
+                  </p>
+                </div>
+              </div>
+            )}
                         <div className='bordamenu'></div>
                         <div className='linksmenu'>
                             <div className='linkinteracao1'>
@@ -55,6 +84,7 @@ function Onca() {
                                             <li><NavLink to="/Onca">istituto Onça Pintada</NavLink></li>
                                             <li><NavLink to="/Pantanal">SOS Pantanal</NavLink></li>
                                             <li><NavLink to="/Ipe">IPÊ</NavLink></li>
+                                            <li>{userEmail && (<div className="linkinteracao3"><button onClick={handleLogout} className="logout-button">Sair</button></div>)}</li>
                                         </ul>
                                     </div>
                                 </h3>
