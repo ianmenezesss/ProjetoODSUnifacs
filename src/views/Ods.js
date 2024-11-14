@@ -14,6 +14,14 @@ import { NavLink, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function Ods() {
+    const colorG = {
+        color: 'green'
+      }
+
+    const fontR = {
+        fontFamily: "roboto"
+      }
+
     const [userEmail, setUserEmail] = useState(null);
 
     useEffect(() => {
@@ -32,7 +40,7 @@ function Ods() {
   
     return (
         <>
-            <header className="header-nav">
+            <header className="header-nav" style={fontR}>
                 <span className='logo-header'>
                     <Link to='/'>
                         <img src={Logo} alt="Logo" />
@@ -50,7 +58,7 @@ function Ods() {
               <div className="menu-interativo-componentes">
                 <VscAccount />
                 <div className="facaseulogin">
-                  <p>Olá, {userEmail}</p>
+                  <p style={fontR}>Olá, <span style={colorG}>{userEmail}</span></p>
                 </div>
               </div>
             ) : (
@@ -81,7 +89,7 @@ function Ods() {
                                     <div className='linkinstitutos'>
                                         <ul>
                                             <li><NavLink to="/Araraazul">Instituto Arara Azul</NavLink></li>
-                                            <li><NavLink to="/Onca">istituto Onça Pintada</NavLink></li>
+                                            <li><NavLink to="/Onca">Istituto Onça Pintada</NavLink></li>
                                             <li><NavLink to="/Pantanal">SOS Pantanal</NavLink></li>
                                             <li><NavLink to="/Ipe">IPÊ</NavLink></li>
                                             <li>{userEmail && (<div className="linkinteracao3"><button onClick={handleLogout} className="logout-button">Sair</button></div>)}</li>
@@ -95,12 +103,12 @@ function Ods() {
                 </nav>
             </header>
 
-            <section className='img-principal'>
+            <section className='img-principal' style={fontR}>
                 <img src={img} alt="Ods" />
                 <label className='legenda-img'>Helping preserve <span>nature’s</span> balance.</label>
             </section>
 
-            <section className='text'>
+            <section className='text' style={fontR}>
                 <div className='texto-principal'>
                     <span>ODS 15:</span>
                 </div>
@@ -110,7 +118,7 @@ function Ods() {
                 como parte da Agenda 2030 para o Desenvolvimento Sustentável. Esse objetivo é voltado para a proteção, recuperação e 
                 promoção do uso <span>sustentável</span> dos ecossistemas terrestres, a gestão sustentável das florestas, o combate à desertificação, a 
                 interrupção e reversão da degradação da terra e a detenção da perda de biodiversidade. O ODS 15 destaca a importância da 
-                <span>preservação</span> dos ecossistemas terrestres, reconhecendo que eles são essenciais para a vida no planeta, fornecendo serviços 
+                <span> preservação</span> dos ecossistemas terrestres, reconhecendo que eles são essenciais para a vida no planeta, fornecendo serviços 
                 ambientais vitais, como o sequestro de carbono, a regulação do clima, a purificação da água e a manutenção da biodiversidade.
                 </p>
 
@@ -170,7 +178,7 @@ function Ods() {
                 Além disso, há uma expectativa crescente de que o setor privado desempenhe um papel mais ativo na 
                 implementação da <span>ODS 15</span>. Empresas em todo o mundo estão começando a adotar práticas mais sustentáveis 
                 em suas cadeias de produção, como a certificação de produtos florestais e agrícolas que respeitam a 
-                biodiversidade e reduzem o desmatamento. Políticas públicas voltadas para a <span>proteção da biodiversidade</span> 
+                biodiversidade e reduzem o desmatamento. Políticas públicas voltadas para a <span>proteção da biodiversidade </span> 
                 também devem se tornar mais rigorosas, especialmente em países com grandes áreas de floresta tropical,
                 como o Brasil e a Indonésia.
                 </p>
@@ -197,7 +205,7 @@ function Ods() {
 
                 <div className='icon-footer'><IoLogoFacebook />    <PiInstagramLogoFill />    <MdEmail /></div>
 
-                <div className='footer-bio'> <h5>© BioSphere</h5></div>
+                <div className='footer-bio'> <h5 style={fontR}>© BioSphere</h5></div>
             </footer>
 
         </>

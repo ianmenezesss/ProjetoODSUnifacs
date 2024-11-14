@@ -13,6 +13,14 @@ import { NavLink } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function Menu() {
+  const colorG = {
+    color: 'green'
+  }
+
+const fontR = {
+    fontFamily: "roboto"
+  }
+
   const [userEmail, setUserEmail] = useState(null);
 
   useEffect(() => {
@@ -31,7 +39,7 @@ function Menu() {
 
   return (
     <>
-      <header className="header-nav">
+      <header className="header-nav" style={fontR}>
         <span className='logo-header'>
           <img src={Logo} alt="Logo" />
         </span>
@@ -47,7 +55,7 @@ function Menu() {
               <div className="menu-interativo-componentes">
                 <VscAccount />
                 <div className="facaseulogin">
-                  <p>Olá, {userEmail}</p>
+                <p style={fontR}>Olá, <span style={colorG}>{userEmail}</span></p>
                 </div>
               </div>
             ) : (
@@ -78,7 +86,7 @@ function Menu() {
                   <div className='linkinstitutos'>
                     <ul>
                       <li><NavLink to="/Araraazul">Instituto Arara Azul</NavLink></li>
-                      <li><NavLink to="/Onca">istituto Onça Pintada</NavLink></li>
+                      <li><NavLink to="/Onca">Istituto Onça Pintada</NavLink></li>
                       <li><NavLink to="/Pantanal">SOS Pantanal</NavLink></li>
                       <li><NavLink to="/Ipe">IPÊ</NavLink></li>
                       <li>{userEmail && (<div className="linkinteracao3"><button onClick={handleLogout} className="logout-button">Sair</button></div>)}</li>
@@ -93,12 +101,12 @@ function Menu() {
         </nav>
       </header>
 
-      <section className='img-principal'>
+      <section className='img-principal' style={fontR}>
         <img src={img} alt="sapo" />
         <label className='legenda-img'>Helping preserve <span>nature’s</span> balance.</label>
       </section>
 
-      <section className='text'>
+      <section className='text' style={fontR}>
         <p>
           O <span> BioSphere </span> é um projeto
           informativo que visa conscientizar
@@ -116,7 +124,7 @@ function Menu() {
 
         <p>
           Nosso objetivo é educar as pessoas
-          sobre questões <span> ambientais críticas </span>, como:
+          sobre questões <span> ambientais críticas</span>, como:
         </p>
 
         <ul className='text-ul'>
@@ -175,7 +183,7 @@ function Menu() {
 
         <div className='icon-footer'><IoLogoFacebook />    <PiInstagramLogoFill />    <MdEmail /></div>
 
-        <div className='footer-bio'> <h5>© BioSphere</h5></div>
+        <div className='footer-bio'> <h5 style={fontR}>© BioSphere</h5></div>
       </footer>
 
     </>

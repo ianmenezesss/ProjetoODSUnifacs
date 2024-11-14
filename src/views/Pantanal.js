@@ -14,6 +14,14 @@ import { NavLink, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function Pantanal() {
+    const colorG = {
+        color: 'green'
+      }
+
+    const fontR = {
+        fontFamily: "roboto"
+      }
+
     const [userEmail, setUserEmail] = useState(null);
 
     useEffect(() => {
@@ -32,7 +40,7 @@ function Pantanal() {
   
     return (
         <>
-            <header className="header-nav">
+            <header className="header-nav" style={fontR}>
                 <span className='logo-header'>
                     <Link to='/'>
                         <img src={Logo} alt="Logo" />
@@ -50,7 +58,7 @@ function Pantanal() {
               <div className="menu-interativo-componentes">
                 <VscAccount />
                 <div className="facaseulogin">
-                  <p>Olá, {userEmail}</p>
+                  <p style={fontR}>Olá, <span style={colorG}>{userEmail}</span></p>
                 </div>
               </div>
             ) : (
@@ -81,7 +89,7 @@ function Pantanal() {
                                     <div className='linkinstitutos'>
                                         <ul>
                                             <li><NavLink to="/Araraazul">Instituto Arara Azul</NavLink></li>
-                                            <li><NavLink to="/Onca">istituto Onça Pintada</NavLink></li>
+                                            <li><NavLink to="/Onca">Istituto Onça Pintada</NavLink></li>
                                             <li><NavLink to="/Pantanal">SOS Pantanal</NavLink></li>
                                             <li><NavLink to="/Ipe">IPÊ</NavLink></li>
                                             <li>{userEmail && (<div className="linkinteracao3"><button onClick={handleLogout} className="logout-button">Sair</button></div>)}</li>
@@ -97,10 +105,10 @@ function Pantanal() {
 
             <section className='img-principal'>
                 <img src={img} alt="Pantanal" />
-                <label className='legenda-img'>Helping preserve <span>nature’s</span> balance.</label>
+                <label style={fontR} className='legenda-img'>Helping preserve <span>nature’s</span> balance.</label>
             </section>
 
-            <section className='text'>
+            <section className='text' style={fontR}>
                 <div className='texto-principal'>
                     <span>SOS Pantanal:</span>
                 </div>
@@ -148,7 +156,7 @@ function Pantanal() {
             </section>
 
             <section>
-            <button className='button'><a href='https://www.sospantanal.org.br/'>Vem Conhecer!</a></button>
+            <button style={fontR} className='button'><a href='https://www.sospantanal.org.br/'>Vem Conhecer!</a></button>
             </section>
 
             <footer className='footer'>
@@ -159,7 +167,7 @@ function Pantanal() {
 
                 <div className='icon-footer'><IoLogoFacebook />    <PiInstagramLogoFill />    <MdEmail /></div>
 
-                <div className='footer-bio'> <h5>© BioSphere</h5></div>
+                <div className='footer-bio'> <h5 style={fontR}>© BioSphere</h5></div>
             </footer>
 
         </>

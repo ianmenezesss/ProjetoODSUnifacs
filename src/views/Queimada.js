@@ -13,6 +13,14 @@ import { NavLink, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function Queimada() {
+    const colorG = {
+      color: 'green'
+    }
+
+    const fontR = {
+      fontFamily: "roboto"
+    }
+
   const [userEmail, setUserEmail] = useState(null);
 
   useEffect(() => {
@@ -31,7 +39,7 @@ function Queimada() {
 
   return (
     <>
-      <header className="header-nav">
+      <header className="header-nav" style={fontR}>
         <span className='logo-header'>
           <Link to='/'>
             <img src={Logo} alt="Logo" />
@@ -49,7 +57,7 @@ function Queimada() {
               <div className="menu-interativo-componentes">
                 <VscAccount />
                 <div className="facaseulogin">
-                  <p>Olá, {userEmail}</p>
+                  <p style={fontR}>Olá, <span style={colorG}>{userEmail}</span></p>
                 </div>
               </div>
             ) : (
@@ -80,7 +88,7 @@ function Queimada() {
                   <div className='linkinstitutos'>
                     <ul>
                       <li><NavLink to="/Araraazul">Instituto Arara Azul</NavLink></li>
-                      <li><NavLink to="/Onca">istituto Onça Pintada</NavLink></li>
+                      <li><NavLink to="/Onca">Istituto Onça Pintada</NavLink></li>
                       <li><NavLink to="/Pantanal">SOS Pantanal</NavLink></li>
                       <li><NavLink to="/Ipe">IPÊ</NavLink></li>
                       <li>{userEmail && (<div className="linkinteracao3"><button onClick={handleLogout} className="logout-button">Sair</button></div>)}</li>
@@ -96,12 +104,12 @@ function Queimada() {
 
       <section className='img-principal'>
         <img src={img} alt="Queimada" />
-        <label className='legenda-img'>Helping preserve <span>nature’s</span> balance.</label>
+        <label style={fontR} className='legenda-img'>Helping preserve <span>nature’s</span> balance.</label>
       </section>
 
-      <section className='text'>
+      <section className='text' style={fontR}>
         <div className='texto-principal'>
-          <span>Queimadas:</span>
+          <span style={fontR}>Queimadas:</span>
         </div>
 
         <p>
@@ -140,7 +148,7 @@ function Queimada() {
           No <span>Cerrado</span>, um dos biomas mais ricos em
           biodiversidade do Brasil, as queimadas afetam
           gravemente a fauna e a flora locais, enquanto o
-          <span>Pantanal</span>, uma das maiores planícies alagadas do
+          <span> Pantanal</span>, uma das maiores planícies alagadas do
           mundo, tem sofrido com a destruição de seus
           habitats e o impacto na vida selvagem.
         </p>
@@ -148,7 +156,7 @@ function Queimada() {
         <p>
           As queimadas causam uma série de problemas
           tanto a curto quanto a longo prazo. Imediatamente,
-          elas resultam na <span>destruição de habitats</span>,
+          elas resultam na <span> destruição de habitats</span>,
           colocando em risco espécies animais e vegetais e
           contribuindo para a extinção de muitas delas.
           A poluição gerada pela fumaça afeta a qualidade
@@ -164,7 +172,7 @@ function Queimada() {
 
         <p>
           A longo prazo, as queimadas contribuem para a
-          <span>perda de biodiversidade</span>,
+          <span> perda de biodiversidade</span>,
           ameaçando o equilíbrio
           ecológico e os serviços ambientais essenciais,
           como a polinização e a purificação da água.
@@ -183,7 +191,7 @@ function Queimada() {
 
         <p>
           Para prevenir as queimadas,
-          é essencial adotar <span>práticas agrícolas</span>
+          é essencial adotar <span> práticas agrícolas </span>
           a agrofloresta, que reduzem a necessidade
           de queimar a terra para o cultivo.
           A fiscalização rigorosa e a aplicação efetiva
@@ -221,7 +229,7 @@ function Queimada() {
           o primeiro passo para a mudança.
           Informando sobre as causas e os impactos
           das queimadas, esperamos contribuir para a
-          <span>conscientização e a proteção do nosso planeta.</span>
+          <span> conscientização e a proteção do nosso planeta.</span>
         </p>
       </section>
 
@@ -234,7 +242,7 @@ function Queimada() {
 
         <div className='icon-footer'><IoLogoFacebook />    <PiInstagramLogoFill />    <MdEmail /></div>
 
-        <div className='footer-bio'> <h5>© BioSphere</h5></div>
+        <div className='footer-bio'> <h5 style={fontR}>© BioSphere</h5></div>
       </footer>
 
     </>
