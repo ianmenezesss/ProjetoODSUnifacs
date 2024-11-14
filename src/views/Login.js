@@ -7,13 +7,20 @@ import { PiLockKeyLight } from "react-icons/pi";
 import '../Css/Button.css'
 import { BsArrowRightShort } from "react-icons/bs";
 import arvore from '../img/imag-Login.svg'
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import api from '../services/api';
 
 function Login() {
   const emailRef = useRef();
   const senhaRef = useRef();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      navigate('/') 
+    }
+  }, [navigate]);
 
   async function handleSubmit(e) {
     e.preventDefault();
