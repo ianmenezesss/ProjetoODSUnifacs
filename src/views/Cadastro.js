@@ -8,7 +8,7 @@ import '../Css/Button.css'
 import { BsArrowRightShort } from "react-icons/bs";
 import { RxPerson } from "react-icons/rx";
 import sapocadastro from '../img/SapoCadastro.svg'
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import api from '../services/api';
 
 
@@ -17,6 +17,13 @@ function Cadastro() {
   const nameRef = useRef();
   const senhaRef = useRef();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      navigate('/') 
+    }
+  }, [navigate]);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -34,7 +41,6 @@ function Cadastro() {
       localStorage.setItem('token', token); 
       localStorage.setItem('email', emailRef.current.value); 
 
-      alert('Cadastro realizado com sucesso!')
 
       navigate('/')
 
