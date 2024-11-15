@@ -1,47 +1,200 @@
-@media  screen
-and (max-width: 430px) {
-    
-    .footer{
-        width: 430px;
-        height: 250px;
-        background-color: black;
-        margin-top: 30px;
-    }
-    
-    .footer-img img{
-        width: 100px;
-        height: 100px;
-    }
-    
-    .footer-img{
-        text-align: center;
-        padding-top: 50px;
+.footer {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: 362px;
+    background-color: black;
+    margin-top: 50px;
+}
+
+.footer-img .Logo {
+    opacity: 0;
+    position: absolute;
+    top: -100000;
+}
+
+.footer-img .LogoPc {
+    width: 500px;
+    height: 205px;
+    padding-left: 100px;
+}
+
+.footer-img {
+    padding-top: 50px;
 }
 
 .icon-footer {
-    text-align: center;
+    position: relative;
+    display: grid;
+    top: 80px;
+    right: 80px;
+    width: 200px;
+    height: 200px;
     color: rgba(42, 175, 25, 1);
 }
 
-.icon-footer svg{
-    width: 20px;
-    height: 20px;
+.icon-footer p {
+    color: rgba(42, 175, 25, 1);
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.icon-footer span {
+    font-size: 20px;
+    color: rgba(42, 175, 25, 1);
+}
+
+.subeIconFoter{
+    display: flex;
+}
+
+.icon-footer svg {
+    width: 25px;
+    height: 25px;
     padding-right: 3px;
     padding-left: 5px;
 }
 
-.footer-bio{
+.footer-bio {
     text-align: center;
-    padding-top: 10px;
-    font-size: 10px;
+    position: relative;
+    height: 3px;
+    top: 280px;
+    right: 45%;
+    font-size: 12px;
     color: rgba(42, 175, 25, 1);
 }
 
-h5{
-    display: inline;
+h5 {
     width: 58px;
     height: 12px;
 }
+
+@media screen and (max-width: 2685px){
+    
+    .footer-img .LogoPc{height: 250px; padding-left: 200px;}
+    
+    .icon-footer{right: 100px;}
+}
+
+@media screen and (max-width: 1440px){
+    .footer-img .LogoPc{ padding-left: 0px;}
+
+    .icon-footer{right: 0px;}
+}
+
+@media screen and (max-width: 1024px){
+
+    .footer-img .LogoPc{padding-right: 50px;}
+
+    .footer-bio {right: 42%;}
 }
 
 
+@media screen and (max-width: 1024px){
+
+    .footer-img .LogoPc{padding-right: 0px; width: 350px;}
+
+    .icon-footer{left: 30px;}
+
+}
+
+
+@media screen and (max-width: 430px) {
+
+    .footer {
+        display: grid;
+        align-content: center;
+        width: 430px;
+        height: 230px;
+        background-color: black;
+        margin-top: 30px;
+    }
+
+    .icon-footer span {opacity: 0; position: absolute;}
+
+    .icon-footer p {opacity: 0; position: absolute;}
+
+    .footer-img{width: 100px;}
+
+    .footer-img .Logo {
+        width: 100px;
+        height: 100px;
+        top: -20px;
+        left: 55%;
+        opacity: 1;
+        position: relative;
+    }
+
+    .footer-img {
+        text-align: center;
+    }
+
+    .footer-img .LogoPc{opacity: 0; width: 0px; height: 0px; 
+        position: absolute;}
+
+    .icon-footer {
+        display: flex;
+        text-align: center;
+        height: 35px;
+        left: 30%;
+        top: 0px;
+        color: rgba(42, 175, 25, 1);
+    }
+
+    .icon-footer svg {
+        width: 20px;
+        height: 20px;
+        padding-right: 3px;
+        padding-left: 5px;
+    }
+
+    .icon-footer .subeIconFoter{
+        height: 50px;
+    }
+
+    .footer-bio {
+        position: relative;
+        top: 0px;
+        left: 1%;
+        color: rgba(42, 175, 25, 1);
+        height: auto;
+    }
+
+    h5 {
+        display: inline;
+        width: 58px;
+        height: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .icon-footer {
+        left: 20px;
+    }
+
+    .footer-img .Logo {
+        left: 15px;
+    }
+
+    .footer-bio{
+        width: 80px;
+        left: 23px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+    .icon-footer {
+        left: 5px;
+    }
+
+    .footer-img .Logo {
+        left: 0px;
+    }
+
+    .footer-bio{
+        width: 80px;
+        left: 10px;
+    }
+}

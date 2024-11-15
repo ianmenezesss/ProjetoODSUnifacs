@@ -1,27 +1,72 @@
+.img-principal{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.img-principal  img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+.legenda-img{
+    position: absolute;
+    font-size: 48px;
+    left: 550px;
+    top: 100px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+span{
+    color: rgba(6, 73, 40, 1);
+}
+
+@media screen and (max-width: 2685px){
+    .legenda-img{left: 870px; font-size: 50px;}
+}
+
+@media screen and (max-width: 2560px){
+
+    .legenda-img{ left: 800px; font-size: 50px;}
+
+}
+
+@media screen and (max-width: 1880px){
+
+    .legenda-img{ left: 30%;}
+}
+
+@media screen and (max-width: 1440px){
+    
+    .legenda-img{ left: 20%;}
+}
+
+@media screen and (max-width: 1024px){
+    
+    .legenda-img{ left: 15%; font-size: 48px;}
+}
+
+@media screen and (max-width: 1024px){
+    
+    .legenda-img{ font-size: 38px;}
+}
+
 @media screen and (max-width: 430px){
-    
-    .img-principal{
-        position: relative;
-        margin-bottom: 20px;
-    }
-    
+      
     .img-principal > img{
         width: 430px;
+        height: 350px;
     }
 
 
     .legenda-img{
-        position: absolute;
         font-size: 21px;
-        left: 50px;
+        left: 60px;
         top: 50px;
-        color: white;
-        font-family: "Roboto", sans-serif;
     }
     
-    span{
-        color: rgba(6, 73, 40, 1);
-    }
 }
 
 @media screen  and (max-width: 425px){
@@ -30,7 +75,7 @@
     }        
 }
 
-@media screen  and (max-width: 368px){
+@media screen  and (max-width: 375px){
     .legenda-img{
         font-size: 18px;
     }        
@@ -45,5 +90,9 @@
 @media screen  and (max-width: 320px){
     .img-principal > img{
         width: 320px;
-    }      
+    }
+    
+    .legenda-img{
+        left: 40px;
+    }  
 }

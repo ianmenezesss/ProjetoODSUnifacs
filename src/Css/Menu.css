@@ -1,20 +1,392 @@
+.header-nav{
+    width: auto;
+    height: 230px;
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menuPc{
+    display: flex;
+    gap: 80px;
+    padding-right: 100px;
+}
+
+.menuPc h3{
+    font-size: 16px;
+    color: rgba(75, 186, 91, 1);
+    padding-top: 12px;
+}
+
+.menuinterativo  Link{
+    width: 0px;
+    height: 0px;
+}
+
+.logo-header{
+    height: 150px;
+}
+
+.linkinteracao1{
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.linkinteracao2{
+  border: 1px solid;
+  border-color: #000000;
+}
+
+.linkeducação{
+  border-top: 1px solid;
+  border-color: #000000;
+}
+
+.linkinstitutos{
+  border-top: 1px solid;
+  border-color: #000000;
+}
+
+nav{
+    height: 150px;
+    width: auto;
+    align-content: center;
+}
+
+.logo-header .Logo{
+    opacity: 0;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+.logo-header .LogoPc{
+    padding-left: 20px;
+}
+
+.menuinterativo{
+    opacity: 0;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: -100000px;
+}
+
+.menulinhas{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
+
+.menu-fack{
+    opacity: 0;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+}
+
+.menu {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000000;
+    width: fit-content;
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  .menu .link {
+    position: relative;
+    display: flex;
+    gap: 12px;
+    padding: 12px 36px;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .menu .link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .menu .link svg {
+    width: 14px;
+    height: 14px;
+    fill: #000000;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .menu .item {
+    position: relative;
+  }
+  
+  .menu .item .submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    border-radius: 0 0 16px 16px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1;
+    pointer-events: none;
+    list-style: none;
+  }
+  
+  .menu .item.item:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
+    border-top: transparent;
+    border-color: rgba(75, 186, 91, 1);;
+  }
+  
+  
+  .menu .item:hover .link {
+    color: #ffffff;
+    border-radius: 16px 16px 0 0;
+  }
+  
+  .menu .item:hover .link::after {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  
+  .menu .item:active .link svg {
+    fill: #ffffff;
+    transform: rotate(-180deg);
+  }
+  .menu {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #000000;
+  width: fit-content;
+  display: flex;
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.menu .link {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  padding: 12px 36px;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .link svg {
+  width: 14px;
+  height: 14px;
+  fill: #000000;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.menu .item {
+  position: relative;
+}
+
+.menu .item .submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  border-radius: 0 0 16px 16px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #cccccc;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-12px);
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+  pointer-events: none;
+  list-style: none;
+}
+
+.menu .item.item:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+  border-top: transparent;
+  border-color: black;
+}
+
+
+.menu .item:hover .link {
+  color: #ffffff;
+  border-radius: 16px 16px 0 0;
+}
+
+.menu .item:hover .link::after {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.menu .item:active .link svg {
+  fill: #ffffff;
+  transform: rotate(-180deg);
+}
+
+.submenu .submenu-item {
+  width: 100%;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  font-size: 14px;
+}
+
+.submenu .submenu-link {
+  display: block;
+  padding: 12px 24px;
+  width: 100%;
+  position: relative;
+  transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.submenu .submenu-item:last-child .submenu-link {
+  border-bottom: none;
+}
+
+.submenu .submenu-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.submenu .submenu-link:hover:before {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+.submenu .submenu-link:hover {
+  color: #ffffff;
+}
+  .submenu .submenu-item {
+    width: 100%;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 2;
+  }
+  
+  .submenu .submenu-link {
+    display: block;
+    padding: 12px 24px;
+    width: 100%;
+    position: relative;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .submenu .submenu-item:last-child .submenu-link {
+    border-bottom: none;
+  }
+  
+  .submenu .submenu-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .submenu .submenu-link:hover:before {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+  
+  .submenu .submenu-link:hover {
+    color: #ffffff;
+  }
+
+  .link span{
+    color: rgba(75, 186, 91, 1);
+  }
+
 @media screen and (max-width: 430px){
     .header-nav{
         width: auto;
         height: 80px;
-        display: flex;
-        overflow: hidden;
-        justify-content: space-between;
-        align-items: center;
     }
 
-    .logo-header img{
-        width: 50px;
-        height: 40px;
+    .logo-header{
+      width: 150px;
+      height: 80px;
+    }
+
+    .logo-header .Logo{
+      opacity: 1;
+      position: relative;
+        width: 100px;
+        height: 80px;
         padding-left: 20px;
     }
+
+    .LogoPc{
+      opacity: 0;
+      width: 0px;
+      height: 0px;
+    }
     
+    .menuPc{
+      opacity: 0;
+      position: absolute;
+      bottom: 10000px;
+    }
+
     .menulinhas{
+        position: relative;
+        top: -10px;
+        width: 46px;
         height: 20%;
         align-content: center;
         padding-right: 20px;
@@ -28,10 +400,12 @@
 }
 
 .menu-fack {
-    position: fixed;
+    position: relative;
+    top: 16px;
+    left: 3px;
     width: 20px;
+    z-index: 1;
     height: 20px;
-    margin-left: 3px;
     opacity: 0;
 }
 
@@ -63,17 +437,16 @@
     position: fixed;
     background-color: white;
     width: 200px;
-    height: 320px;
-    right: 10px;
-    top: 10vh;
+    height: 350px;
+    right: 0px;
+    top: 80px;
     z-index: 1;
-    box-shadow: -100px 605px 0px 600px rgba(0,0,0,0.40);
     transform: translateX(100%);
     opacity: 0;
     transition: transform 0.3s ease-in;
 }
 
-.menuinterativo > Link{
+.menuinterativo  Link{
     text-decoration: none;
 }
 
@@ -112,7 +485,7 @@ a {
     font-size: 12px;
     display: grid;
     gap: 20px;
-    margin-left: 10px;
+    margin-left: 5px;
     border-color: aqua;
 }
 
@@ -141,23 +514,6 @@ h3 > a {
 .linksmenu li{
     list-style-type: none;
 }
-/*
-.linkeducação{
-    position: absolute;
-    transform: translateY(-100%);
-    opacity: 0;
-}*/
-
-/*.linkinstitutos{
-    position: absolute;
-    transform: translateY(-100%);
-    opacity: 0;
-}*/
-
-/*.linkinteracao1.active{
-    transform: translateY(0);
-    display: block;
-}*/
 
 .bordamenu{
     background-color: rgba(170, 170, 170, 1);
@@ -187,6 +543,14 @@ h3 > a {
     }
 }
 
+@media screen  and (max-width: 375px){
+
+  .menuinterativo{
+    right: 0px;
+    top: 73px;
+  }
+}
+
 @media screen  and (max-width: 320px){
     .header-nav{
         width: auto;
@@ -196,3 +560,5 @@ h3 > a {
         right: -13px;
     }
 }
+
+

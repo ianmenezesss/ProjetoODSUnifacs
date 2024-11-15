@@ -3,6 +3,7 @@ import '../Css/Img-Principal.css'
 import '../Css/Footer.css'
 import '../Css/Text.css'
 import Logo from '../img/Logo-Bio.jpg'
+import LogoPc from '../img/LogoBioPc.svg'
 import img from '../img/Queimadas.svg'
 import { IoLogoFacebook } from "react-icons/io";
 import { PiInstagramLogoFill } from "react-icons/pi";
@@ -13,13 +14,13 @@ import { NavLink, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function Queimada() {
-    const colorG = {
-      color: 'green'
-    }
+  const colorG = {
+    color: 'green'
+  }
 
-    const fontR = {
-      fontFamily: "roboto"
-    }
+  const fontR = {
+    fontFamily: "roboto"
+  }
 
   const [userEmail, setUserEmail] = useState(null);
 
@@ -41,11 +42,52 @@ function Queimada() {
     <>
       <header className="header-nav" style={fontR}>
         <span className='logo-header'>
-          <Link to='/'>
-            <img src={Logo} alt="Logo" />
-          </Link>
+          <NavLink to="/"><img className='Logo' src={Logo} alt="Logo" /></NavLink>
+          <NavLink to="/"><img className='LogoPc' src={LogoPc} alt="Logo" /></NavLink>
         </span>
         <nav>
+
+          <div className='menuPc'>
+            <div class="menu">
+              <div class="item">
+                <a href="#" class="link">
+                  <span> Educação Ambiental <CgChevronDown /> </span>
+                </a>
+                <div class="submenu">
+                  <div class="submenu-item">
+                    <NavLink to="/Queimada">Queimadas</NavLink>
+                  </div>
+                  <div class="submenu-item">
+                    <NavLink to="/Especies">Perda de Espécies</NavLink>
+                  </div>
+                </div>
+              </div>
+
+              <h3><NavLink to="/Ods">ODS 15</NavLink></h3>
+
+              <div class="item">
+                <a href="#" class="link">
+                  <span> Instituto <CgChevronDown /> </span>
+                </a>
+                <div class="submenu">
+                  <div class="submenu-item">
+                    <NavLink to="/Araraazul">Instituto Arara Azul</NavLink>
+                  </div>
+                  <div class="submenu-item">
+                    <NavLink to="/Onca">Istituto Onça Pintada</NavLink>
+                  </div>
+                  <div class="submenu-item">
+                    <NavLink to="/Pantanal">SOS Pantanal</NavLink>
+                  </div>
+                  <div class="submenu-item">
+                    <NavLink to="/Ipe">IPÊ</NavLink>
+                  </div>
+                </div>
+              </div>
+              <button className='ButtonEntrarNav'><NavLink to="/Login">Entrar</NavLink></button>
+            </div>
+          </div>
+          
           <input type="checkbox" className="menu-fack"></input>
           <div className='menulinhas'>
             <div className='linha1'></div>
@@ -73,7 +115,7 @@ function Queimada() {
             <div className='bordamenu'></div>
             <div className='linksmenu'>
               <div className='linkinteracao1'>
-                <h3>Educação Ambiental <CgChevronDown />
+                <h3>Educação Ambiental 
                   <div className='linkeducação'>
                     <ul>
                       <li><NavLink to="/Queimada">Queimadas</NavLink></li>
@@ -84,7 +126,7 @@ function Queimada() {
               </div>
               <h3><NavLink to="/Ods">ODS 15</NavLink></h3>
               <div className='linkinteracao2'>
-                <h3>Institutos <CgChevronDown />
+                <h3>Institutos 
                   <div className='linkinstitutos'>
                     <ul>
                       <li><NavLink to="/Araraazul">Instituto Arara Azul</NavLink></li>
@@ -237,10 +279,21 @@ function Queimada() {
       <footer className='footer'>
 
         <div className='footer-img'>
-          <img src={Logo} alt="Logo" />
+          <img className='Logo' src={Logo} alt="Logo" />
+          <img className='LogoPc' src={LogoPc} alt="Logo" />
         </div>
 
-        <div className='icon-footer'><IoLogoFacebook />    <PiInstagramLogoFill />    <MdEmail /></div>
+        <div className='icon-footer'>
+          <span>REDES SOCIAIS:</span>
+          <div className='subeIconFoter'>
+            <IoLogoFacebook /> <p>FaceBook</p>
+          </div>
+          <div className='subeIconFoter'>
+            <PiInstagramLogoFill /> <p>Instagram</p>
+          </div>
+          <div className='subeIconFoter'>
+            <MdEmail /> <p>BioSphere@gmail.com</p> </div>
+        </div>
 
         <div className='footer-bio'> <h5 style={fontR}>© BioSphere</h5></div>
       </footer>

@@ -1,10 +1,62 @@
+
+.text{
+    width: 1800px;
+    font-size: 20px;
+    line-height: 37.5px;
+    text-align: left;
+}
+
+.text p{
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
+.text span{
+    color: rgba(42, 175, 25, 1);
+}
+
+.text-ul{
+    margin-left: 80px;
+}
+
+.text-ul li{
+    margin-bottom: 10px;
+}
+
+.texto-principal{
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    overflow: none;
+}
+
+@media screen and (max-width: 2685px){
+    
+    .text{ width: 70%; font-size: 30px; position: relative; left: 320px;}
+
+    .text p{margin-left: 80px;}
+
+    .text ul{margin-left: 120px;}
+}
+
+@media screen and (max-width: 1880px){
+    
+    .text{ width: 80%; left: 200px;}
+}
+
+@media screen and (max-width: 1024px){
+
+    .text{  left: 70px; font-size: 25px;}
+}
+
 @media only screen
 and (max-width: 430px){
     
     .text{
         margin-left: 0px;
         width: 340px;
-        font-size: 12px;
+        left: 5%;
+        font-size: 15px;
         line-height: 14.06px;
     }
     
@@ -18,7 +70,7 @@ and (max-width: 430px){
     }
     
     .text-ul{
-        margin-left: 80px;
+        margin-left: 80px !important;
     }
     
     .text-ul li{
@@ -30,5 +82,54 @@ and (max-width: 430px){
         margin-bottom: 20px;
         margin-left: 60px;
         overflow: none;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .text{
+        width: 350px;
+        left: 0px;
+        font-size: 14px;
+    }
+    
+    .text p{
+        margin-left: 30px;
+    }
+    
+    .text-ul{
+        margin-left: 50px !important;
+    }
+    
+    .text-ul li{
+        margin-bottom: 10px;
+    }
+
+    .texto-principal{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    .text{
+        width: 300px;
+        left: 0px;
+        font-size: 14px;
+    }
+    
+    .text p{
+        margin-left: 30px;
+    }
+    
+    .text-ul{
+        margin-left: 50px !important;
+    }
+    
+    .text-ul li{
+        margin-bottom: 10px;
+    }
+
+    .texto-principal{
+        margin-left: 30px;
     }
 }
