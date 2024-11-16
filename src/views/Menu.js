@@ -10,7 +10,7 @@ import { PiInstagramLogoFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
 import { VscAccount } from "react-icons/vsc";
 import { CgChevronDown } from "react-icons/cg";
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function Menu() {
@@ -22,21 +22,26 @@ function Menu() {
     fontFamily: "roboto"
   }
 
+  const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState(null);
 
   useEffect(() => {
     const token = localStorage.getItem('token');
     const email = localStorage.getItem('email');
     if (token) {
-      setUserEmail(email); // Define o email se o token existir
+      setUserEmail(email); 
     }
   }, []);
 
   function handleLogout() {
-    localStorage.removeItem('token'); // Remove o token
-    localStorage.removeItem('email'); // Remove o email
-    setUserEmail(null); // Reseta o estado do email
+    localStorage.removeItem('token');
+    localStorage.removeItem('email');
+    setUserEmail(null); 
   }
+
+  function handleLogin() {
+    navigate('/Login');
+    }
 
   return (
     <>
@@ -48,16 +53,16 @@ function Menu() {
         <nav>
 
           <div className='menuPc'>
-            <div class="menu">
-              <div class="item">
-                <a href="#" class="link">
+            <div className="menu">
+              <div className="item">
+                <p className="link">
                   <span> Educação Ambiental <CgChevronDown /> </span>
-                </a>
-                <div class="submenu">
-                  <div class="submenu-item">
+                </p>
+                <div className="submenu">
+                  <div className="submenu-item">
                     <NavLink to="/Queimada">Queimadas</NavLink>
                   </div>
-                  <div class="submenu-item">
+                  <div className="submenu-item">
                     <NavLink to="/Especies">Perda de Espécies</NavLink>
                   </div>
                 </div>
@@ -65,26 +70,28 @@ function Menu() {
 
               <h3><NavLink to="/Ods">ODS 15</NavLink></h3>
 
-              <div class="item">
-                <a href="#" class="link">
+              <div className="item">
+                <p className="link">
                   <span> Instituto <CgChevronDown /> </span>
-                </a>
-                <div class="submenu">
-                  <div class="submenu-item">
+                </p>
+                <div className="submenu">
+                  <div className="submenu-item">
                     <NavLink to="/Araraazul">Instituto Arara Azul</NavLink>
                   </div>
-                  <div class="submenu-item">
+                  <div className="submenu-item">
                     <NavLink to="/Onca">Istituto Onça Pintada</NavLink>
                   </div>
-                  <div class="submenu-item">
+                  <div className="submenu-item">
                     <NavLink to="/Pantanal">SOS Pantanal</NavLink>
                   </div>
-                  <div class="submenu-item">
+                  <div className="submenu-item">
                     <NavLink to="/Ipe">IPÊ</NavLink>
                   </div>
                 </div>
               </div>
-              <button className='ButtonEntrarNav'><NavLink to="/Login">Entrar</NavLink></button>
+              {!userEmail ? (<button onClick={handleLogin} className='ButtonEntrarNav'>Entrar</button>
+            ):(
+            <button onClick={handleLogout} className='ButtonEntrarNav'>Sair</button>)}
             </div>
           </div>
 
@@ -220,7 +227,7 @@ function Menu() {
       </section>
 
 
-      <footer className='footer'>
+      <footer className='footer' style={fontR}>
 
         <div className='footer-img'>
         <img className='Logo' src={Logo} alt="Logo" />
@@ -239,7 +246,7 @@ function Menu() {
           <MdEmail /> <p>BioSphere@gmail.com</p> </div>
           </div>
 
-        <div className='footer-bio'> <h5 style={fontR}>© BioSphere</h5></div>
+        <div className='footer-bio'> <h5>© BioSphere</h5></div>
       </footer>
 
     </>
