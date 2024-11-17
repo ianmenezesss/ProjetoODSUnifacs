@@ -28,25 +28,6 @@
     height: 150px;
 }
 
-.linkinteracao1{
-  border: 1px solid;
-  border-color: #000000;
-}
-
-.linkinteracao2{
-  border: 1px solid;
-  border-color: #000000;
-}
-
-.linkeducação{
-  border-top: 1px solid;
-  border-color: #000000;
-}
-
-.linkinstitutos{
-  border-top: 1px solid;
-  border-color: #000000;
-}
 
 nav{
     height: 150px;
@@ -454,7 +435,7 @@ nav{
     position: fixed;
     background-color: white;
     width: 200px;
-    height: 375px;
+    height: 360px;
     right: 0px;
     top: 80px;
     z-index: 1;
@@ -506,8 +487,9 @@ a {
     border-color: aqua;
 }
 
-.linkeducação > ul > li> a{
+.linkeducacao a{
     color: black;
+    font-size: 1.10em;
 }
 
 h3 > a {
@@ -516,6 +498,7 @@ h3 > a {
 
 .linkinstitutos > ul > li> a{
     color: black;
+    font-size: 1.10em;
 }
 
 .linksmenu svg{

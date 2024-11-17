@@ -43,6 +43,17 @@ function Menu() {
     navigate('/Login');
     }
 
+  const [showEducation, setShowEducation] = useState(false);
+  const [showInstitutes, setShowInstitutes] = useState(false);
+
+  function toggleEducation() {
+    setShowEducation(!showEducation);
+  };
+
+  function toggleInstitutes()  {
+    setShowInstitutes(!showInstitutes);
+  };
+
   return (
     <>
       <header className="header-nav" style={fontR}>
@@ -122,30 +133,34 @@ function Menu() {
             )}
             <div className='bordamenu'></div>
             <div className='linksmenu'>
-              <div className='linkinteracao1'>
-                <h3>Educação Ambiental 
-                  <div className='linkeducação'>
+              <div className="linkinteracao1">
+                <h3 onClick={toggleEducation}>Educação Ambiental</h3>
+                {showEducation && (
+                  <div className="linkeducacao">
                     <ul>
                       <li><NavLink to="/Queimada">Queimadas</NavLink></li>
                       <li><NavLink to="/Especies">Perda de Espécies</NavLink></li>
                     </ul>
                   </div>
-                </h3>
+                )}
               </div>
+
               <h3><NavLink to="/Ods">ODS 15</NavLink></h3>
+
               <div className='linkinteracao2'>
-                <h3>Institutos 
-                  <div className='linkinstitutos'>
+                <h3 onClick={toggleInstitutes}>Institutos</h3>
+                {showInstitutes && (
+                  <div className="linkinstitutos">
                     <ul>
                       <li><NavLink to="/Araraazul">Instituto Arara Azul</NavLink></li>
-                      <li><NavLink to="/Onca">Istituto Onça Pintada</NavLink></li>
+                      <li><NavLink to="/Onca">Instituto Onça Pintada</NavLink></li>
                       <li><NavLink to="/Pantanal">SOS Pantanal</NavLink></li>
                       <li><NavLink to="/Ipe">IPÊ</NavLink></li>
                     </ul>
                   </div>
-                </h3>
+                )}
               </div>
-                  <li>{userEmail && (<div className="linkinteracao3"><button onClick={handleLogout} className="logout-button">Sair</button></div>)}</li>
+              <li>{userEmail && (<div className="linkinteracao3"><button onClick={handleLogout} className="logout-button">Sair</button></div>)}</li>
             </div>
 
           </section>
