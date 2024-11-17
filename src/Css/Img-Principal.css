@@ -13,7 +13,6 @@
 .legenda-img{
     position: absolute;
     font-size: 48px;
-    left: 00px;
     top: 100px;
     color: white;
     font-family: "Roboto", sans-serif;
@@ -24,12 +23,12 @@ span{
 }
 
 @media screen and (max-width: 2685px){
-    .legenda-img{left: 35%; font-size: 50px;}
+    .legenda-img{left: 35%; font-size: 60px;}
 }
 
 @media screen and (max-width: 1880px){
 
-    .legenda-img{ left: 30%;}
+    .legenda-img{ left: 30%; font-size: 50px;}
 }
 
 @media screen and (max-width: 1440px){

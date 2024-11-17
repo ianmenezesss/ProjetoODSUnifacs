@@ -141,11 +141,11 @@ function Menu() {
                       <li><NavLink to="/Onca">Istituto Onça Pintada</NavLink></li>
                       <li><NavLink to="/Pantanal">SOS Pantanal</NavLink></li>
                       <li><NavLink to="/Ipe">IPÊ</NavLink></li>
-                      <li>{userEmail && (<div className="linkinteracao3"><button onClick={handleLogout} className="logout-button">Sair</button></div>)}</li>
                     </ul>
                   </div>
                 </h3>
               </div>
+                  <li>{userEmail && (<div className="linkinteracao3"><button onClick={handleLogout} className="logout-button">Sair</button></div>)}</li>
             </div>
 
           </section>

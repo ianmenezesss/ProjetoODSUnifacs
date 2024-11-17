@@ -139,6 +139,27 @@ button .vemConhecer{
     border: 1px solid;
 }
 
+.logout-button{
+    cursor: pointer;
+    background-color: rgba(75, 186, 91, 1);
+    border-radius: 12px;
+    border-color: white;
+    width: 40px;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    border: 1px solid;
+    font-size: 12px;
+}
+
+.linkinteracao3{
+    display: flex;
+    justify-content: flex-end;
+    width: 170px;
+}
+
+
+
 @media screen and (max-width: 1880px) {
 
     .buttoncadastroLogin {
@@ -294,13 +315,7 @@ button .vemConhecer{
         width: 250px;
     }
 
-    .buttoncadastro {
-        left: 35px;
-        width: 250px;
-    }
+    .buttoncadastro {left: 35px;width: 250px;}
 
-    .buttonEntrarParaHome {
-        width: 250px;
-        left: 30px;
-    }
+    .buttonEntrarParaHome {width: 250px;left: 30px;}
 }

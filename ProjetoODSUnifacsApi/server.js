@@ -3,6 +3,8 @@ import publicRouter from './routes/public.js'
 import privateRouter from './routes/private.js'
 import cors from 'cors'
 import auth from './middlewares/auth.js'
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app = express()
 app.use(express.json())
