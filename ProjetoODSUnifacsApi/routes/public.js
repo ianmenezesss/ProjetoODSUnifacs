@@ -17,6 +17,26 @@ router.post('/cadastro', async (req, res) => {
     try{
     const user = req.body
 
+    // Verifica se já existe um usuário com o mesmo email
+    const jaTemEmail  = await prisma.user.findUnique({
+        where:{
+            email: user.email,
+        }
+    })
+
+    if (jaTemEmail) {
+        return res.status(400).json({ error: 'O email já está cadastrado.' });
+    }
+
+    // Valida se senha deve tem pelomenos 5 caracteres
+    if (!user.senha || user.senha.length < 5) {
+         return res.status(400).json({ error: 'A senha deve ter pelo menos 5 caracteres.' });
+    }
+
+    // Validação: nome não pode ser nulo ou vazio
+    if (!user.name || user.name.trim() === '') {
+        return res.status(400).json({ error: 'O nome é obrigatório.' });
+    }
 
     // cria um hash da senha do usuário
     const salt = await bcrypt.genSalt(10);

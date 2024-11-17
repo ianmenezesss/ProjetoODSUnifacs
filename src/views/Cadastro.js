@@ -45,7 +45,7 @@ function Cadastro() {
       navigate('/')
 
     } catch (e) {
-      alert("Erro ao cadastrar");
+      alert(e.response.data.error);
     }
 
   }

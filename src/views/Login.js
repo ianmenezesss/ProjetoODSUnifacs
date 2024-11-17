@@ -38,7 +38,7 @@ function Login() {
       navigate('/')
 
     } catch (e) {
-      alert("Senha ou Email incorretos");
+      alert(e.response.data.error);
     }
 
   }

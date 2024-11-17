@@ -68,6 +68,8 @@ nav{
 }
 
 .menu {
+    display: flex;
+    gap: 10px;
     font-size: 16px;
     line-height: 1.6;
     color: #000000;
@@ -523,14 +525,21 @@ h3 > a {
 
 }
 
-@media screen  and (max-width: 375px){
-    .header-nav{
-        width: auto;
-    }
+@media screen and (max-width: 768px) {
+  .LogoPc{width: 200px;}
 
-    .menuinterativo{
-        right: -13px;
-    }
+  .menu{font-size: 14px;}
+
+  .submenu .submenu-item{font-size: 12px;}
+
+  .submenu .submenu-item a {width: 130px;}
+
+  .menu h3{font-size: 14px;}
+
+  .menu a{width: 50px; display: flex;}
+
+  .link span {display: flex;}
+
 }
 
 @media screen  and (max-width: 425px){
@@ -543,9 +552,12 @@ h3 > a {
     }
 }
 
-@media screen  and (max-width: 375px){
+@media screen and (max-width: 375px) {
+  .header-nav {
+    width: auto;
+  }
 
-  .menuinterativo{
+  .menuinterativo {
     right: 0px;
     top: 73px;
   }
