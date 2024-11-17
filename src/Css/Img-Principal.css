@@ -13,7 +13,7 @@
 .legenda-img{
     position: absolute;
     font-size: 48px;
-    left: 550px;
+    left: 00px;
     top: 100px;
     color: white;
     font-family: "Roboto", sans-serif;
@@ -24,13 +24,7 @@ span{
 }
 
 @media screen and (max-width: 2685px){
-    .legenda-img{left: 870px; font-size: 50px;}
-}
-
-@media screen and (max-width: 2560px){
-
-    .legenda-img{ left: 800px; font-size: 50px;}
-
+    .legenda-img{left: 35%; font-size: 50px;}
 }
 
 @media screen and (max-width: 1880px){
@@ -40,17 +34,17 @@ span{
 
 @media screen and (max-width: 1440px){
     
-    .legenda-img{ left: 20%;}
-}
-
-@media screen and (max-width: 1024px){
-    
-    .legenda-img{ left: 15%; font-size: 48px;}
+    .legenda-img{ left: 25%;}
 }
 
 @media screen and (max-width: 1024px){
     
     .legenda-img{ font-size: 38px;}
+}
+
+@media screen and (max-width: 768px){
+    
+    .legenda-img{ font-size: 35px; left: 15%;}
 }
 
 @media screen and (max-width: 430px){
@@ -90,6 +84,7 @@ span{
 @media screen  and (max-width: 320px){
     .img-principal > img{
         width: 320px;
+        height: 250px;
     }
     
     .legenda-img{

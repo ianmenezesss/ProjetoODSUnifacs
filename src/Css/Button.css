@@ -50,52 +50,6 @@ button .vemConhecer{
     top: 13px;
 }
 
-.buttonGoogleLogin {
-    background-color: white;
-    border-radius: 12px;
-    border-color: white;
-    position: relative;
-    left: 50px;
-    top: 30px;
-    width: 305px;
-    height: 50px;
-    color: rgba(75, 186, 91, 1);
-    font-size: 16px;
-    border: 1px solid;
-    border-color: rgba(75, 186, 91, 1);
-}
-
-.buttonGoogleLogin svg {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 12px;
-    left: 50px;
-}
-
-.buttonGoogleCadastro {
-    background-color: white;
-    border-radius: 12px;
-    border-color: white;
-    position: relative;
-    left: 35px;
-    top: 40px;
-    width: 305px;
-    height: 50px;
-    color: rgba(75, 186, 91, 1);
-    font-size: 16px;
-    border: 1px solid;
-    border-color: rgba(75, 186, 91, 1);
-}
-
-.buttonGoogleCadastro svg {
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 10px;
-    left: 50px;
-}
-
 .buttoncadastroLogin {
     position: relative;
     top: -200px;
@@ -206,29 +160,16 @@ button .vemConhecer{
         left: 19.5%;
     }
 
-    .buttonGoogle svg {
-        top: 1.5vh;
-        left: 6vh;
-    }
-
     .buttoncadastro {
         top: 500px;
         left: 60.4%;
     }
 }
 
-@media screen and (max-width: 768px) {
-
-    .buttonGoogle svg {
-        top: 1.8vh !important;
-        left: 6vh !important;
-    }
-}
-
 @media screen and (max-width: 1024px) {
-    .buttonGoogle svg {
-        top: 2vh;
-        left: 7vh;
+    
+    .button{
+        left: 28%;
     }
 
     .buttonEntrarLogin {
@@ -241,6 +182,10 @@ button .vemConhecer{
 }
 
 @media screen and (max-width: 768px) {
+
+    .button p{font-size: 16px;}
+
+    .button{width: 300px; left: 30%;}
 
     .buttoncadastroLogin {
         top: -80px;
@@ -257,17 +202,11 @@ button .vemConhecer{
 }
 
 @media screen and (max-width: 430px){
-    .button{
-        left: 100px;
-        width: 250px;
-    }
+    .button{width: 200px;}
+    .button p{font-size: 15px;}
 }
 
 @media screen and (max-width: 425px) {
-    .button {
-        
-        left: 70px;
-    }
 
     .buttonEntrarParaHome {
         top: 20px;
@@ -293,21 +232,6 @@ button .vemConhecer{
         top: 1.5vh;
     }
 
-    .buttonGoogleLogin {
-        left: 20px;
-        top: 30px;
-    }
-
-    .buttonGoogleLogin svg {
-        top: 10px;
-        left: 50px;
-    }
-
-    .buttonGoogleCadastro {
-        top: 30px;
-        left: 20px;
-    }
-
     .buttoncadastro {
         left: 70px;
     }
@@ -317,7 +241,6 @@ button .vemConhecer{
     }
 
     .buttoncadastroLogin {
-        position: relative;
         top: -450px;
         left: 13vh;
     }
@@ -346,6 +269,9 @@ button .vemConhecer{
 }
 
 @media screen and (max-width: 375px) {
+    
+    .button{left: 25%;}
+
     .buttonEntrarLogin {
         left: 50px;
     }
@@ -356,6 +282,9 @@ button .vemConhecer{
 }
 
 @media screen and (max-width: 320px) {
+    
+    .button{left: 20%;}
+    
     .buttonEntrarLogin {
         left: 30px;
         width: 250px;
@@ -365,26 +294,9 @@ button .vemConhecer{
         width: 250px;
     }
 
-    .buttonGoogleCadastro {
-        width: 250px;
-    }
-
-    .buttonGoogleCadastro svg {
-        left: 30px;
-    }
-
     .buttoncadastro {
         left: 35px;
         width: 250px;
-    }
-
-    .buttonGoogleLogin {
-        width: 250px;
-        left: 30px;
-    }
-
-    .buttonGoogleLogin svg {
-        left: 30px;
     }
 
     .buttonEntrarParaHome {

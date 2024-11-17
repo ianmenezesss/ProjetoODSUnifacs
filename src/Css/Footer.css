@@ -170,20 +170,20 @@ h5 {
 
 @media screen and (max-width: 375px) {
     .icon-footer {
-        left: 20px;
+        left: 35px;
     }
 
     .footer-img .Logo {
-        left: 15px;
+        left: 30px;
     }
 
     .footer-bio{
         width: 80px;
-        left: 23px;
+        left: 38px;
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
     
     .icon-footer {
         left: 5px;

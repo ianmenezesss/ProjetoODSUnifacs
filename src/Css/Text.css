@@ -93,8 +93,9 @@ and (max-width: 430px){
 @media screen and (max-width: 375px){
     .text{
         width: 350px;
-        left: 0px;
+        left: 10px;
         font-size: 14px;
+        line-height: 20.06px;
     }
     
     .text p{
@@ -114,27 +115,9 @@ and (max-width: 430px){
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 320px){
 
-    .text{
-        width: 300px;
-        left: 0px;
-        font-size: 14px;
-    }
+    .text{width: 300px; line-height: 18.06px;}
     
-    .text p{
-        margin-left: 30px;
-    }
-    
-    .text-ul{
-        margin-left: 50px !important;
-    }
-    
-    .text-ul li{
-        margin-bottom: 10px;
-    }
-
-    .texto-principal{
-        margin-left: 30px;
-    }
+    .text p{margin-left: 30px;}
 }
