@@ -173,72 +173,74 @@ function Menu() {
         <label className='legenda-img'>Helping preserve <span>nature’s</span> balance.</label>
       </section>
 
-      <section className='text' style={fontR}>
-        <p>
-          O <span> BioSphere </span> é um projeto
-          informativo que visa conscientizar
-          o público sobre os principais impactos
-          ambientais que afetam a biodiversidade
-          terrestre, com base no Objetivo de
-          Desenvolvimento Sustentável 15 (ODS 15)
-          da ONU: "Proteger, recuperar e promover
-          o uso sustentável dos ecossistemas terrestres,
-          gerenciar florestas de forma sustentável,
-          combater a desertificação, deter e reverter
-          a degradação da terra e deter a perda de
-          biodiversidade."
-        </p>
+      <section className='text-container'>
+        <section className='text' style={fontR}>
+          <p>
+            O <span> BioSphere </span> é um projeto
+            informativo que visa conscientizar
+            o público sobre os principais impactos
+            ambientais que afetam a biodiversidade
+            terrestre, com base no Objetivo de
+            Desenvolvimento Sustentável 15 (ODS 15)
+            da ONU: "Proteger, recuperar e promover
+            o uso sustentável dos ecossistemas terrestres,
+            gerenciar florestas de forma sustentável,
+            combater a desertificação, deter e reverter
+            a degradação da terra e deter a perda de
+            biodiversidade."
+          </p>
 
-        <p>
-          Nosso objetivo é educar as pessoas
-          sobre questões <span> ambientais críticas</span>, como:
-        </p>
+          <p>
+            Nosso objetivo é educar as pessoas
+            sobre questões <span> ambientais críticas</span>, como:
+          </p>
 
-        <ul className='text-ul'>
-          <li>
-            Queimadas: As queimadas, muitas vezes
-            provocadas para expandir áreas agrícolas ou para
-            a extração de recursos, destroem vastas extensões
-            de florestas e habitats essenciais para inúmeras
-            espécies.
-            Esses incêndios não só resultam na perda de
-            biodiversidade, mas também agravam as mudanças
-            climáticas, liberando grandes quantidades de dióxido de
-            carbono na atmosfera.
-          </li>
-          <li>
-            Perda de Espécies: A extinção de espécies devido à destruição de habitats, caça, mudanças
-            climáticas e poluição é uma das ameaças mais
-            graves ao equilíbrio dos ecossistemas.
-            Cada espécie perdida afeta a cadeia alimentar e o
-            funcionamento dos ecossistemas, colocando em risco os
-            serviços ambientais que sustentam a vida humana,
-            como a polinização, a purificação da água e o
-            sequestro de carbono.
-          </li>
-        </ul>
+          <ul className='text-ul'>
+            <li>
+              Queimadas: As queimadas, muitas vezes
+              provocadas para expandir áreas agrícolas ou para
+              a extração de recursos, destroem vastas extensões
+              de florestas e habitats essenciais para inúmeras
+              espécies.
+              Esses incêndios não só resultam na perda de
+              biodiversidade, mas também agravam as mudanças
+              climáticas, liberando grandes quantidades de dióxido de
+              carbono na atmosfera.
+            </li>
+            <li>
+              Perda de Espécies: A extinção de espécies devido à destruição de habitats, caça, mudanças
+              climáticas e poluição é uma das ameaças mais
+              graves ao equilíbrio dos ecossistemas.
+              Cada espécie perdida afeta a cadeia alimentar e o
+              funcionamento dos ecossistemas, colocando em risco os
+              serviços ambientais que sustentam a vida humana,
+              como a polinização, a purificação da água e o
+              sequestro de carbono.
+            </li>
+          </ul>
 
-        <p>
-          Através de artigos e outros recursos educativos,
-          o <span> BioSphere </span> pretende fornecer informações claras e
-          acessíveis sobre essas problemáticas.
-          Nosso foco é ajudar o público a entender as
-          consequências das atividades humanas no meio
-          ambiente e como isso se relaciona diretamente
-          com a perda de biodiversidade e a saúde dos
-          ecossistemas.
-        </p>
+          <p>
+            Através de artigos e outros recursos educativos,
+            o <span> BioSphere </span> pretende fornecer informações claras e
+            acessíveis sobre essas problemáticas.
+            Nosso foco é ajudar o público a entender as
+            consequências das atividades humanas no meio
+            ambiente e como isso se relaciona diretamente
+            com a perda de biodiversidade e a saúde dos
+            ecossistemas.
+          </p>
 
-        <p>
-          Embora o projeto seja inteiramente informativo,
-          nossa missão é inspirar uma mudança de mentalidade,
-          incentivando as pessoas a refletirem sobre seu papel
-          na preservação do planeta. Ao conscientizar sobre a
-          urgência de proteger a natureza, esperamos contribuir
-          para um futuro mais sustentável, onde a coexistência
-          entre o ser humano e a natureza seja harmoniosa e
-          equilibrada.
-        </p>
+          <p>
+            Embora o projeto seja inteiramente informativo,
+            nossa missão é inspirar uma mudança de mentalidade,
+            incentivando as pessoas a refletirem sobre seu papel
+            na preservação do planeta. Ao conscientizar sobre a
+            urgência de proteger a natureza, esperamos contribuir
+            para um futuro mais sustentável, onde a coexistência
+            entre o ser humano e a natureza seja harmoniosa e
+            equilibrada.
+          </p>
+        </section>
       </section>
 
 

@@ -2,16 +2,17 @@ import express from 'express'
 import publicRouter from './routes/public.js'
 import cors from 'cors'
 
+// Configufuração do CORS para permitir que a API seja acessada apenas pelo meu site
 const corsOptions = {
-    origin: 'https://biosphereods.vercel.app', // Allow only your frontend's origin
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
-    allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers
+    origin: 'https://biosphereods.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    allowedHeaders: ['Content-Type', 'Authorization'], 
   };
 
 const app = express()
 app.use(express.json())
 
-// Habilita o CORS que permite que a API seja acessada por qualquer domínio
+// Habilita o CORS
 app.use(cors())
 
 app.use(cors(corsOptions));

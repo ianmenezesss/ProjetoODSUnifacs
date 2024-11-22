@@ -1,4 +1,10 @@
 
+.text-container{
+    display: flex;
+    justify-content: center;
+    
+}
+
 .text{
     width: 1800px;
     font-size: 20px;
@@ -7,7 +13,7 @@
 }
 
 .text p{
-    margin-left: 60px;
+    /* margin-left: 60px; */
     margin-bottom: 15px;
 }
 
@@ -16,7 +22,7 @@
 }
 
 .text-ul{
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 .text-ul li{
@@ -32,7 +38,7 @@
 
 @media screen and (max-width: 2685px){
     
-    .text{ width: 70%; font-size: 20px; position: relative; left: 320px;}
+    .text{ width: 70%; font-size: 20px; position: relative;}
 
     .text p{margin-left: 80px;}
 
@@ -41,17 +47,17 @@
 
 @media screen and (max-width: 1880px){
     
-    .text{ width: 80%; left: 200px;}
+    .text{ width: 80%; }
 }
 
 @media screen and (max-width: 1024px){
 
-    .text{  left: 70px; font-size: 18px;}
+    .text{ font-size: 18px;}
 }
 
 @media screen and (max-width: 768px){
 
-    .text{  left: 70px; font-size: 16px;}
+    .text{  font-size: 16px;}
 }
 
 @media only screen

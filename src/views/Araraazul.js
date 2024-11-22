@@ -1,78 +1,84 @@
-import '../Css/Menu.css'
-import '../Css/Button.css'
-import '../Css/Img-Principal.css'
-import '../Css/Footer.css'
-import '../Css/Text.css'
-import Logo from '../img/Logo-Bio.jpg'
-import img from '../img/AraraAzul.svg'
-import LogoPc from '../img/LogoBioPc.svg'
+import "../Css/Menu.css";
+import "../Css/Button.css";
+import "../Css/Img-Principal.css";
+import "../Css/Footer.css";
+import "../Css/Text.css";
+import Logo from "../img/Logo-Bio.jpg";
+import img from "../img/AraraAzul.svg";
+import LogoPc from "../img/LogoBioPc.svg";
 import { IoLogoFacebook } from "react-icons/io";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import { MdEmail } from "react-icons/md";
 import { VscAccount } from "react-icons/vsc";
 import { CgChevronDown } from "react-icons/cg";
-import { NavLink, useNavigate} from 'react-router-dom';
-import { useState, useEffect } from 'react';
+import { NavLink, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function Araraazul() {
   const colorG = {
-    color: 'green'
-  }
+    color: "green",
+  };
 
   const fontR = {
-    fontFamily: "roboto"
-  }
+    fontFamily: "roboto",
+  };
 
   const navigate = useNavigate();
   const [userEmail, setUserEmail] = useState(null);
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
-    const email = localStorage.getItem('email');
+    const token = localStorage.getItem("token");
+    const email = localStorage.getItem("email");
     if (token) {
       setUserEmail(email);
     }
   }, []);
 
   function handleLogout() {
-    localStorage.removeItem('token'); 
-    localStorage.removeItem('email'); 
-    setUserEmail(null); 
+    localStorage.removeItem("token");
+    localStorage.removeItem("email");
+    setUserEmail(null);
   }
 
   function handleLogin() {
-    navigate('/Login');
-    }
+    navigate("/Login");
+  }
 
-    function vemConhecer() {
-      window.location.href = 'https://www.institutoararaazul.org.br/';
-    }
+  function vemConhecer() {
+    window.location.href = "https://www.institutoararaazul.org.br/";
+  }
 
-    const [showEducation, setShowEducation] = useState(false);
-    const [showInstitutes, setShowInstitutes] = useState(false);
-  
-    function toggleEducation() {
-      setShowEducation(!showEducation);
-    };
-  
-    function toggleInstitutes()  {
-      setShowInstitutes(!showInstitutes);
-    };
+  const [showEducation, setShowEducation] = useState(false);
+  const [showInstitutes, setShowInstitutes] = useState(false);
+
+  function toggleEducation() {
+    setShowEducation(!showEducation);
+  }
+
+  function toggleInstitutes() {
+    setShowInstitutes(!showInstitutes);
+  }
 
   return (
     <>
       <header className="header-nav" style={fontR}>
-        <span className='logo-header'>
-          <NavLink to="/"><img className='Logo' src={Logo} alt="Logo" /></NavLink>
-          <NavLink to="/"><img className='LogoPc' src={LogoPc} alt="Logo" /></NavLink>
+        <span className="logo-header">
+          <NavLink to="/">
+            <img className="Logo" src={Logo} alt="Logo" />
+          </NavLink>
+          <NavLink to="/">
+            <img className="LogoPc" src={LogoPc} alt="Logo" />
+          </NavLink>
         </span>
         <nav>
-
-          <div className='menuPc'>
+          <div className="menuPc">
             <div className="menu">
               <div className="item">
                 <p className="link">
-                  <span> Educação Ambiental <CgChevronDown /> </span>
+                  <span>
+                    {" "}
+                    Educação Ambiental <CgChevronDown />{" "}
+                  </span>
                 </p>
                 <div className="submenu">
                   <div className="submenu-item">
@@ -84,11 +90,16 @@ function Araraazul() {
                 </div>
               </div>
 
-              <h3><NavLink to="/Ods">ODS 15</NavLink></h3>
+              <h3>
+                <NavLink to="/Ods">ODS 15</NavLink>
+              </h3>
 
               <div className="item">
                 <p className="link">
-                  <span> Instituto <CgChevronDown /> </span>
+                  <span>
+                    {" "}
+                    Instituto <CgChevronDown />{" "}
+                  </span>
                 </p>
                 <div className="submenu">
                   <div className="submenu-item">
@@ -105,23 +116,31 @@ function Araraazul() {
                   </div>
                 </div>
               </div>
-              {!userEmail ? (<button onClick={handleLogin} className='ButtonEntrarNav'>Entrar</button>
-            ):(
-            <button onClick={handleLogout} className='ButtonEntrarNav'>Sair</button>)}
+              {!userEmail ? (
+                <button onClick={handleLogin} className="ButtonEntrarNav">
+                  Entrar
+                </button>
+              ) : (
+                <button onClick={handleLogout} className="ButtonEntrarNav">
+                  Sair
+                </button>
+              )}
             </div>
           </div>
           <input type="checkbox" className="menu-fack"></input>
-          <div className='menulinhas'>
-            <div className='linha1'></div>
-            <div className='linha2'></div>
-            <div className='linha3'></div>
+          <div className="menulinhas">
+            <div className="linha1"></div>
+            <div className="linha2"></div>
+            <div className="linha3"></div>
           </div>
           <section className="menuinterativo">
             {userEmail ? (
               <div className="menu-interativo-componentes">
                 <VscAccount />
                 <div className="facaseulogin">
-                  <p style={fontR}>Olá, <span style={colorG}>{userEmail}</span></p>
+                  <p style={fontR}>
+                    Olá, <span style={colorG}>{userEmail}</span>
+                  </p>
                 </div>
               </div>
             ) : (
@@ -129,131 +148,169 @@ function Araraazul() {
                 <VscAccount />
                 <div className="facaseulogin">
                   <p>
-                    Faça seu <span><NavLink to="/Login">Login</NavLink></span>
+                    Faça seu{" "}
+                    <span>
+                      <NavLink to="/Login">Login</NavLink>
+                    </span>
                   </p>
                 </div>
               </div>
             )}
-            <div className='bordamenu'></div>
-            <div className='linksmenu'>
+            <div className="bordamenu"></div>
+            <div className="linksmenu">
               <div className="linkinteracao1">
                 <h3 onClick={toggleEducation}>Educação Ambiental</h3>
                 {showEducation && (
                   <div className="linkeducacao">
                     <ul>
-                      <li><NavLink to="/Queimada">Queimadas</NavLink></li>
-                      <li><NavLink to="/Especies">Perda de Espécies</NavLink></li>
+                      <li>
+                        <NavLink to="/Queimada">Queimadas</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/Especies">Perda de Espécies</NavLink>
+                      </li>
                     </ul>
                   </div>
                 )}
               </div>
 
-              <h3><NavLink to="/Ods">ODS 15</NavLink></h3>
+              <h3>
+                <NavLink to="/Ods">ODS 15</NavLink>
+              </h3>
 
-              <div className='linkinteracao2'>
+              <div className="linkinteracao2">
                 <h3 onClick={toggleInstitutes}>Institutos</h3>
                 {showInstitutes && (
                   <div className="linkinstitutos">
                     <ul>
-                      <li><NavLink to="/Araraazul">Instituto Arara Azul</NavLink></li>
-                      <li><NavLink to="/Onca">Instituto Onça Pintada</NavLink></li>
-                      <li><NavLink to="/Pantanal">SOS Pantanal</NavLink></li>
-                      <li><NavLink to="/Ipe">IPÊ</NavLink></li>
+                      <li>
+                        <NavLink to="/Araraazul">Instituto Arara Azul</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/Onca">Instituto Onça Pintada</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/Pantanal">SOS Pantanal</NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/Ipe">IPÊ</NavLink>
+                      </li>
                     </ul>
                   </div>
                 )}
               </div>
-              <li>{userEmail && (<div className="linkinteracao3"><button onClick={handleLogout} className="logout-button">Sair</button></div>)}</li>
+              <li>
+                {userEmail && (
+                  <div className="linkinteracao3">
+                    <button onClick={handleLogout} className="logout-button">
+                      Sair
+                    </button>
+                  </div>
+                )}
+              </li>
             </div>
-
           </section>
-
         </nav>
       </header>
 
-      <section className='img-principal' style={fontR}>
+      <section className="img-principal" style={fontR}>
         <img src={img} alt="AraraAzul" />
-        <label className='legenda-img'>Helping preserve <span>nature’s</span> balance.</label>
+        <label className="legenda-img">
+          Helping preserve <span>nature’s</span> balance.
+        </label>
       </section>
 
-      <section className='text' style={fontR}>
-        <div className='texto-principal'>
-          <span>Instituto Arara Azul:</span>
-        </div>
+      <section className="text-container">
+        <section className="text" style={fontR}>
+          <div className="texto-principal">
+            <span>Instituto Arara Azul:</span>
+          </div>
 
-        <p>
-          O Instituto Arara Azul é uma organização sem fins lucrativos que, desde 1990,
-          dedica-se à conservação da arara-azul-grande (Anodorhynchus hyacinthinus),
-          uma das espécies de aves mais emblemáticas do Brasil e que já esteve seriamente
-          ameaçada de extinção. Com sede no Pantanal, o maior bioma úmido do mundo, o Instituto
-          trabalha ativamente na proteção da arara-azul e na preservação de seu habitat natural,
-          uma região rica em biodiversidade, mas vulnerável a ameaças como o desmatamento e as queimadas.
-        </p>
+          <p>
+            O Instituto Arara Azul é uma organização sem fins lucrativos que,
+            desde 1990, dedica-se à conservação da arara-azul-grande
+            (Anodorhynchus hyacinthinus), uma das espécies de aves mais
+            emblemáticas do Brasil e que já esteve seriamente ameaçada de
+            extinção. Com sede no Pantanal, o maior bioma úmido do mundo, o
+            Instituto trabalha ativamente na proteção da arara-azul e na
+            preservação de seu habitat natural, uma região rica em
+            biodiversidade, mas vulnerável a ameaças como o desmatamento e as
+            queimadas.
+          </p>
 
-        <p>
-          Fundado pela bióloga Neiva Guedes, o Instituto Arara Azul surgiu como uma resposta à
-          alarmante redução das populações de araras-azuis devido à destruição de seus habitats,
-          tráfico de animais e caça ilegal. Hoje, mais de 30 anos depois, a organização se tornou uma
-          referência mundial em projetos de conservação de aves e recuperação de populações ameaçadas,
-          alcançando resultados expressivos na preservação da espécie.
-        </p>
+          <p>
+            Fundado pela bióloga Neiva Guedes, o Instituto Arara Azul surgiu
+            como uma resposta à alarmante redução das populações de araras-azuis
+            devido à destruição de seus habitats, tráfico de animais e caça
+            ilegal. Hoje, mais de 30 anos depois, a organização se tornou uma
+            referência mundial em projetos de conservação de aves e recuperação
+            de populações ameaçadas, alcançando resultados expressivos na
+            preservação da espécie.
+          </p>
 
-        <p>
-          O principal objetivo do Instituto é garantir a sobrevivência das araras-azuis e de
-          outras espécies ameaçadas, por meio de pesquisas científicas, educação ambiental e
-          ações de manejo e monitoramento. Através de um programa de conservação abrangente,
-          eles monitoram os ninhos, estudam os hábitos de reprodução das araras e promovem a
-          preservação das árvores onde essas aves fazem seus ninhos, como os manduvis e as aroeiras.
-        </p>
+          <p>
+            O principal objetivo do Instituto é garantir a sobrevivência das
+            araras-azuis e de outras espécies ameaçadas, por meio de pesquisas
+            científicas, educação ambiental e ações de manejo e monitoramento.
+            Através de um programa de conservação abrangente, eles monitoram os
+            ninhos, estudam os hábitos de reprodução das araras e promovem a
+            preservação das árvores onde essas aves fazem seus ninhos, como os
+            manduvis e as aroeiras.
+          </p>
 
-        <p>
-          Além da conservação direta da arara-azul, o Instituto também desempenha um papel
-          importante na sensibilização das comunidades locais e na promoção do ecoturismo
-          sustentável. Ao longo de suas três décadas de atuação, o trabalho do Instituto
-          Arara Azul ajudou a restaurar as populações da espécie no Pantanal e influenciou
-          políticas públicas de conservação no Brasil. Hoje, o instituto segue firme em sua missão,
-          colaborando com parceiros locais e internacionais para garantir que a arara-azul continue a
-          ser um símbolo de esperança e preservação da vida selvagem.
-        </p>
+          <p>
+            Além da conservação direta da arara-azul, o Instituto também
+            desempenha um papel importante na sensibilização das comunidades
+            locais e na promoção do ecoturismo sustentável. Ao longo de suas
+            três décadas de atuação, o trabalho do Instituto Arara Azul ajudou a
+            restaurar as populações da espécie no Pantanal e influenciou
+            políticas públicas de conservação no Brasil. Hoje, o instituto segue
+            firme em sua missão, colaborando com parceiros locais e
+            internacionais para garantir que a arara-azul continue a ser um
+            símbolo de esperança e preservação da vida selvagem.
+          </p>
 
-        <p>
-          O Instituto Arara Azul é uma prova de que, com esforços contínuos e coordenados,
-          é possível reverter o risco de extinção e garantir um futuro mais seguro para as
-          espécies que compõem a rica biodiversidade brasileira.
-        </p>
-
+          <p>
+            O Instituto Arara Azul é uma prova de que, com esforços contínuos e
+            coordenados, é possível reverter o risco de extinção e garantir um
+            futuro mais seguro para as espécies que compõem a rica
+            biodiversidade brasileira.
+          </p>
+        </section>
       </section>
-
 
       <section>
-        <button style={fontR} onClick={vemConhecer} className='button'><p className='vemConhecer'>Vem Conhecer!</p></button>
+        <button style={fontR} onClick={vemConhecer} className="button">
+          <p className="vemConhecer">Vem Conhecer!</p>
+        </button>
       </section>
 
-
-      <footer className='footer' style={fontR}>
-
-        <div className='footer-img'>
-          <img className='Logo' src={Logo} alt="Logo" />
-          <img className='LogoPc' src={LogoPc} alt="Logo" />
+      <footer className="footer" style={fontR}>
+        <div className="footer-img">
+          <img className="Logo" src={Logo} alt="Logo" />
+          <img className="LogoPc" src={LogoPc} alt="Logo" />
         </div>
 
-        <div className='icon-footer'>
+        <div className="icon-footer">
           <span>REDES SOCIAIS:</span>
-          <div className='subeIconFoter'>
+          <div className="subeIconFoter">
             <IoLogoFacebook /> <p>FaceBook</p>
           </div>
-          <div className='subeIconFoter'>
+          <div className="subeIconFoter">
             <PiInstagramLogoFill /> <p>Instagram</p>
           </div>
-          <div className='subeIconFoter'>
-            <MdEmail /> <p>BioSphere@gmail.com</p> </div>
+          <div className="subeIconFoter">
+            <MdEmail /> <p>BioSphere@gmail.com</p>{" "}
+          </div>
         </div>
 
-        <div className='footer-bio'> <h5>© BioSphere</h5></div>
+        <div className="footer-bio">
+          {" "}
+          <h5>© BioSphere</h5>
+        </div>
       </footer>
-
     </>
   );
-};
+}
 
 export default Araraazul;
