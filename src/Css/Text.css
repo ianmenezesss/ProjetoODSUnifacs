@@ -42,7 +42,7 @@
 
     .text p{margin-left: 80px;}
 
-    .text ul{margin-left: 120px;}
+    .text ul{margin-left: 95px;}
 }
 
 @media screen and (max-width: 1880px){
@@ -85,7 +85,7 @@ and (max-width: 430px){
     }
     
     .text-ul{
-        margin-left: 80px !important;
+        margin-left: 15px !important;
     }
     
     .text-ul li{
