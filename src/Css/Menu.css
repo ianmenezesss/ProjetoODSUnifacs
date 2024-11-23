@@ -69,7 +69,7 @@ nav{
 
 .menu {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     font-size: 16px;
     line-height: 1.6;
     color: #000000;
