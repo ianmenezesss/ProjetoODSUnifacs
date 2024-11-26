@@ -36,59 +36,41 @@ PROTOTIPOS MOBILE:
 
 Figura 1 - Página de Login Mobile
 
-![Interface gráfica do usuário, Aplicativo
-
-Descrição gerada automaticamente](.gitbook/assets/0.png)
+![](.gitbook/assets/0.png)
 
 Figura 2 - Cadastre-se Mobile
 
-![Interface gráfica do usuário, Texto, Aplicativo, chat ou mensagem de texto
-
-Descrição gerada automaticamente](.gitbook/assets/1.png)
+![](.gitbook/assets/1.png)
 
 Figura 3 - Página Principal Mobile
 
-![Texto, Carta
-
-Descrição gerada automaticamente](.gitbook/assets/2.png)
+![](.gitbook/assets/2.png)
 
 Figura 4 - Menu Mobile
 
-![Interface gráfica do usuário, Aplicativo
-
-Descrição gerada automaticamente](.gitbook/assets/3.png)
+![](.gitbook/assets/3.png)
 
 Figura 5 - Exemplo de Página Informativa
 
-![Texto, Carta
-
-Descrição gerada automaticamente](.gitbook/assets/4.png)
+![](.gitbook/assets/4.png)
 
 PROTOTIPOS DESKTOP:
 
 Figura 6 - Página Login Desktop
 
-![Tela de celular com publicação numa rede social
-
-Descrição gerada automaticamente](.gitbook/assets/5.png)
+![](.gitbook/assets/5.png)
 
 Figura 7 - Página Cadastre-se Desktop
 
-![Interface gráfica do usuário
-
-Descrição gerada automaticamente](.gitbook/assets/6.png)
+![](.gitbook/assets/6.png)
 
 Figura 8 - Página Principal Desktop
 
-![Texto
-
-Descrição gerada automaticamente](.gitbook/assets/7.png)
+![](.gitbook/assets/7.png)
 
 Figura 9 - Exemplo de Página Informativa Desktop
 
-![Tela de celular com imagem de pássaro
-
-Descrição gerada automaticamente com confiança média](.gitbook/assets/8.png)
+![](.gitbook/assets/8.png)
 
 **PRINCÍPIOS DE USABILIDADE**
 
